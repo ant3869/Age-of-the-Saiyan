@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=3 uid="uid://bngd5dk0eol3d"]
+
+[ext_resource type="Script" path="res://menu.cs" id="1_unvhg"]
+[ext_resource type="Texture2D" uid="uid://jn5dhvlt2kxq" path="res://Images/VegetaStill.png" id="2_deedx"]
+[ext_resource type="Texture2D" uid="uid://comndja2ypf10" path="res://Images/[Vector]SaiyanMaleOzuro.png" id="4_64ofg"]
+[ext_resource type="Texture2D" uid="uid://cthpo1nvglts5" path="res://Images/Game_Title.png" id="5_776s3"]
+[ext_resource type="StyleBox" uid="uid://dagj0qcmxa66o" path="res://new_style_box_flat.tres" id="5_f7yc0"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8h2rv"]
+resource_local_to_scene = true
+
+[sub_resource type="Theme" id="Theme_sgbo5"]
+
+[node name="Menu" type="Control"]
+material = SubResource("CanvasItemMaterial_8h2rv")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_unvhg")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+border_color = Color(0.341176, 0.00784314, 0.615686, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ReferenceRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_deedx")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="ReferenceRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -488.0
+offset_top = -562.0
+offset_right = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("4_64ofg")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="ReferenceRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -761.0
+offset_top = -112.0
+offset_right = -169.0
+offset_bottom = 36.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("5_776s3")
+expand_mode = 1
+
+[node name="VBoxContainer" type="BoxContainer" parent="ReferenceRect"]
+unique_name_in_owner = true
+y_sort_enabled = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -198.0
+offset_right = 95.0
+offset_bottom = -79.0
+grow_vertical = 0
+scale = Vector2(0.989, 0.977)
+theme = SubResource("Theme_sgbo5")
+vertical = true
+
+[node name="start" type="Button" parent="ReferenceRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_neighbor_left = NodePath("../exit")
+focus_neighbor_top = NodePath("../exit")
+theme_override_styles/normal = ExtResource("5_f7yc0")
+text = "Start"
+
+[node name="options" type="Button" parent="ReferenceRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = ExtResource("5_f7yc0")
+text = "Options"
+
+[node name="exit" type="Button" parent="ReferenceRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_neighbor_right = NodePath("../start")
+focus_neighbor_bottom = NodePath("../start")
+theme_override_styles/normal = ExtResource("5_f7yc0")
+text = "Quit
+"
+
+[connection signal="pressed" from="ReferenceRect/VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="ReferenceRect/VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="ReferenceRect/VBoxContainer/exit" to="." method="_on_exit_pressed"]

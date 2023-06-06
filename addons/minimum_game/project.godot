@@ -1,0 +1,103 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://src/Enemy.gd"
+}, {
+"base": "Node2D",
+"class": "Gate",
+"language": "GDScript",
+"path": "res://src/Gate.gd"
+}, {
+"base": "Control",
+"class": "MenuItem",
+"language": "GDScript",
+"path": "res://src/MenuItem.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://src/Player.gd"
+}, {
+"base": "Area2D",
+"class": "Treasure",
+"language": "GDScript",
+"path": "res://src/Treasure.gd"
+}, {
+"base": "Control",
+"class": "UIMenu",
+"language": "GDScript",
+"path": "res://src/UIMenu.gd"
+} ]
+_global_script_class_icons={
+"Enemy": "",
+"Gate": "",
+"MenuItem": "",
+"Player": "",
+"Treasure": "",
+"UIMenu": ""
+}
+
+[application]
+
+config/name="Minimum Game"
+run/main_scene="res://src/Main.tscn"
+config/icon="res://assets/obstacle.png"
+
+[autoload]
+
+Global="*res://src/Global.gd"
+
+[display]
+
+window/size/width=240
+window/size/height=208
+window/size/test_width=720
+window/size/test_height=624
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[layer_names]
+
+2d_physics/layer_1="Obstacles"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="PlayerPos"
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
+environment/default_environment="res://default_env.tres"
+quality/dynamic_fonts/use_oversampling=false
