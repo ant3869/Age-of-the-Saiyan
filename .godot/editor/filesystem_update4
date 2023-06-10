@@ -1,6 +1,15 @@
-res://menu.tscn
 res://addons/UIDesignTool/addons/ui_design_tool/scripts/Utils.gd
+res://new_style_box_flat.tres
+res://scenes/main.tscn
 res://gofot .tscn
-res://Scenes/New_Game.tscn
-res://Scenes/IntroDisclaimer.tscn
-res://Scenes/IntroLogo.tscn
+res://scenes/New_Game.tscn
+res://scenes/Character_Creation.tscn
+res://scenes/GUI.tscn
+res://menu.tscn
+res://scenes/ui.tscn
+res://assets/DarkTheme/Dark.theme
+res://assets/DarkTheme/StyleBox/ButtonNormal.stylebox
+res://assets/DarkTheme/StyleBox/ButtonPressed.stylebox
+res://assets/DarkTheme/StyleBox/ButtonHover.stylebox
+res://assets/DarkTheme/StyleBox/ButtonFocus.stylebox
+res://assets/DarkTheme/StyleBox/Panel.stylebox

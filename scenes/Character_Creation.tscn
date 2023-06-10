@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://lycy14enusr2"]
+
+[ext_resource type="PackedScene" uid="uid://b6v6whag4hcty" path="res://scenes/GUI.tscn" id="1_33jtf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gv8tn"]
+bg_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tlttm"]
+bg_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[node name="Character_Creation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gv8tn")
+
+[node name="MarginContainer" type="MarginContainer" parent="Background"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Columns" type="HBoxContainer" parent="Background/MarginContainer"]
+layout_mode = 2
+
+[node name="Character_Model" type="PanelContainer" parent="Background/MarginContainer/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_tlttm")
+
+[node name="Input" type="VBoxContainer" parent="Background/MarginContainer/Columns/Character_Model"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer"]
+layout_mode = 2
+
+[node name="Character_Model2" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.91
+theme_override_styles/panel = SubResource("StyleBoxFlat_tlttm")
+
+[node name="RowsR" type="VBoxContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model2"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model2/RowsR"]
+layout_mode = 2
+
+[node name="Character_Model3" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.91
+theme_override_styles/panel = SubResource("StyleBoxFlat_tlttm")
+
+[node name="RowsR" type="VBoxContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3/RowsR"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.67
+
+[node name="GUI" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3/RowsR/PanelContainer" instance=ExtResource("1_33jtf")]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="LineEdit" type="LineEdit" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3/RowsR/PanelContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.84
+placeholder_text = "NAME"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3/RowsR"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit2" type="LineEdit" parent="Background/MarginContainer/Columns/Character_Model/Input/PanelContainer/HBoxContainer/Character_Model3/RowsR/PanelContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.17
+placeholder_text = "NAME"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Background/MarginContainer/Columns/Character_Model/Input"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Character_Model2" type="PanelContainer" parent="Background/MarginContainer/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_tlttm")
+
+[node name="RowsR" type="VBoxContainer" parent="Background/MarginContainer/Columns/Character_Model2"]
+layout_mode = 2

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6v6whag4hcty"]
+
+[ext_resource type="Texture2D" uid="uid://bhoapibnu4ctk" path="res://Images/GUI/InfoBoxes.png" id="1_k27un"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1e027"]
+atlas = ExtResource("1_k27un")
+region = Rect2(0, 0, 233, 36)
+
+[node name="GUI" type="VBoxContainer"]
+clip_children = 2
+anchors_preset = -1
+anchor_right = 0.202257
+anchor_bottom = 0.0555556
+offset_right = -233.0
+offset_bottom = -36.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_k27un")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+clip_contents = true
+layout_mode = 2
+texture = SubResource("AtlasTexture_1e027")
+stretch_mode = 3

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://hirpy0sr57vk"]
+
+[ext_resource type="PackedScene" uid="uid://cn8eir1xkfe4s" path="res://scenes/ui.tscn" id="1_18civ"]
+
+[node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ui" parent="CanvasLayer" instance=ExtResource("1_18civ")]

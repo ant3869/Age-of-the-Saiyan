@@ -1,12 +1,13 @@
 2a60927148abd1d33b818b535e306557
-::res://::1686004556
-export_presets.cfg::TextFile::-1::1686003585::0::1::::<><>::
-gofot .tscn::PackedScene::7337008628650234101::1686004471::0::1::::<><>::
+::res://::1686412855
+export_presets.cfg::TextFile::-1::1686004556::0::1::::<><>::
+gofot .tscn::PackedScene::7337008628650234101::1686301409::0::1::::<><>::
 icon.svg::CompressedTexture2D::7941370350092529414::1685786329::1685786343::1::::<><>::
 menu.cs::CSharpScript::-1::1685945312::0::1::::<><>::
 menu.gdshader::Shader::-1::1685900524::0::1::::<><>::
-menu.tscn::PackedScene::3311497816467216439::1686004471::0::1::::<><>::res://menu.cs<>uid://jn5dhvlt2kxq<>uid://comndja2ypf10<>uid://cthpo1nvglts5<>uid://dagj0qcmxa66o
-new_style_box_flat.tres::StyleBoxFlat::7172240259425391256::1686004418::0::1::::<><>::
+menu.tscn::PackedScene::3311497816467216439::1686301409::0::1::::<><>::res://menu.cs<>uid://jn5dhvlt2kxq<>uid://comndja2ypf10<>uid://cthpo1nvglts5<>uid://dagj0qcmxa66o
+new_style_box_flat.tres::StyleBoxFlat::7172240259425391256::1686412977::0::1::::<><>::
+README.md::TextFile::-1::1686077465::0::1::::<><>::
 ::res://addons/::1686076412
 ::res://addons/BetterRandNumGen/::1686076142
 icon.png::CompressedTexture2D::1782044041275810034::1685894622::1686076142::1::::<><>::
@@ -122,14 +123,14 @@ OverlayTextEdit.gd::GDScript::-1::1685894785::0::1::::<>TextEdit<>::
 OverlayTextEdit.tscn::PackedScene::599610023030786649::1685900253::0::1::::<><>::res://addons/ui_design_tool/scenes/OverlayTextEdit.gd
 Toolbar.gd::GDScript::-1::1685894785::0::1::::<>Control<>::
 Toolbar.tscn::PackedScene::947466063348418113::1685900253::0::1::::<><>::res://addons/ui_design_tool/scenes/Toolbar.gd<>uid://d3xaf7s36xuqc<>uid://ck4h5hqubttt7<>uid://b44il4qj7cem1<>uid://b3tqua2bt1ix2<>uid://8qawl7hrofkj<>uid://cqv3uc8bew0am<>uid://d1uver224k3px<>uid://dn7q7grbfr7kh<>uid://d1rj7h72swjhn<>uid://xnn5xt6piaat<>uid://d0t8qupuaoigg<>uid://i11r3de57bc3<>uid://dtsld0omp3fy0<>uid://rpjhdv5qake3<>uid://cjan2dq5nvdvk<>uid://ckriw8d4yelu<>uid://crte1qj0ftynh<>uid://cm5d77b25dgjc
-::res://addons/UIDesignTool/addons/ui_design_tool/scripts/::1686004468
+::res://addons/UIDesignTool/addons/ui_design_tool/scripts/::1686296968
 FontManager.gd::GDScript::-1::1685894785::0::1::::<>Object<>::
-Utils.gd::GDScript::-1::1686004468::0::1::::<>RefCounted<>::
+Utils.gd::GDScript::-1::1686412977::0::1::::<>RefCounted<>::
 ::res://addons/ui_design_tool/::1686076413
 plugin.cfg::TextFile::-1::1686076412::0::1::::<><>::
 plugin.gd::GDScript::-1::1686076412::0::1::::<>EditorPlugin<>::
 ::res://addons/ui_design_tool/assets/::1686076412
-::res://addons/ui_design_tool/assets/icons/::1686076412
+::res://addons/ui_design_tool/assets/icons/::1686076413
 folder_open-white-18dp.svg::CompressedTexture2D::9026742676645663813::1686076412::1686076413::1::::<><>::
 format-color-text.png::CompressedTexture2D::4391938712429081897::1686076412::1686076413::1::::<><>::
 format_align_center-white-18dp.svg::CompressedTexture2D::616795046529432580::1686076412::1686076413::1::::<><>::
@@ -156,10 +157,33 @@ Toolbar.tscn::PackedScene::947466063348418113::1686076413::0::1::::<><>::res://a
 ::res://addons/ui_design_tool/scripts/::1686076413
 FontManager.gd::GDScript::-1::1686076413::0::1::::<>Object<>::
 Utils.gd::GDScript::-1::1686076413::0::1::::<>RefCounted<>::
+::res://assets/::1686412947
+::res://assets/DarkTheme/::1686412947
+Dark.theme::Theme::-1::1602526961::0::1::::<><>::res://DarkTheme/Fonts/UbuntuFont.res<>res://DarkTheme/StyleBox/ButtonDisabled.stylebox<>res://DarkTheme/StyleBox/ButtonFocus.stylebox<>res://DarkTheme/StyleBox/ButtonHover.stylebox<>res://DarkTheme/StyleBox/ButtonNormal.stylebox<>res://DarkTheme/StyleBox/ButtonPressed.stylebox<>res://DarkTheme/Icons/CheckedBox.png<>res://DarkTheme/Icons/UnCheckedBox.png<>res://DarkTheme/Icons/UnCheckButton.png<>res://DarkTheme/Icons/UnCheckButtonDis.png<>res://DarkTheme/Icons/CheckedButton.png<>res://DarkTheme/Icons/CheckedButtonDis.png<>res://DarkTheme/Icons/Grapper.png<>res://DarkTheme/Icons/GrapperHighlight.png<>res://DarkTheme/StyleBox/Panel.stylebox<>res://DarkTheme/Icons/spinbox.png
+::res://assets/DarkTheme/Fonts/::1686412956
+Ubuntu-L.ttf::FontFile::6283864516318027746::1436533456::1686412956::1::::<><>::
+UbuntuFont.res::FontFile::-1::1602526961::0::1::::<><>::res://DarkTheme/Fonts/Ubuntu-L.ttf
+::res://assets/DarkTheme/Icons/::1686412956
+CheckedBox.png::CompressedTexture2D::8742279809905313519::1602187078::1686412956::1::::<><>::
+CheckedButton.png::CompressedTexture2D::633794438518334910::1602190334::1686412956::1::::<><>::
+CheckedButtonDis.png::CompressedTexture2D::216920312509150513::1602190077::1686412956::1::::<><>::
+Grapper.png::CompressedTexture2D::9063021444539996610::1602472844::1686412956::1::::<><>::
+GrapperHighlight.png::CompressedTexture2D::2256921843370423100::1602472844::1686412956::1::::<><>::
+spinbox.png::CompressedTexture2D::1464215926889810437::1602517362::1686412956::1::::<><>::
+UnCheckButton.png::CompressedTexture2D::1590060355211227596::1602190325::1686412956::1::::<><>::
+UnCheckButtonDis.png::CompressedTexture2D::2160298285581970854::1602190059::1686412956::1::::<><>::
+UnCheckedBox.png::CompressedTexture2D::5308364142206925596::1602186560::1686412956::1::::<><>::
+::res://assets/DarkTheme/StyleBox/::1686412947
+ButtonDisabled.stylebox::StyleBoxFlat::-1::1602181185::0::1::::<><>::
+ButtonFocus.stylebox::StyleBoxFlat::-1::1602525977::0::1::::<><>::
+ButtonHover.stylebox::StyleBoxFlat::-1::1602453686::0::1::::<><>::
+ButtonNormal.stylebox::StyleBoxFlat::-1::1602509233::0::1::::<><>::
+ButtonPressed.stylebox::StyleBoxFlat::-1::1602525922::0::1::::<><>::
+Panel.stylebox::StyleBoxFlat::-1::1602510861::0::1::::<><>::
 ::res://data_Age of the Saiyan_x86_64/::1686004557
 Age of the Saiyan.deps.json::JSON::-1::1686004556::0::1::::<><>::
 Age of the Saiyan.runtimeconfig.json::JSON::-1::1686004556::0::1::::<><>::
-::res://Images/::1685939557
+::res://Images/::1686299405
 daa8d33-1466d35c-2711-4158-a596-60751d0e0f51.png::CompressedTexture2D::9188726400740571633::1570984968::1685931960::1::::<><>::
 Dragon Ball Title Blue.png::CompressedTexture2D::4641863196661666397::1570835910::1685931960::1::::<><>::
 GameDisclaimer2.ogv::VideoStreamTheora::-1::1685939498::0::1::::<><>::
@@ -172,10 +196,16 @@ VegetaStill.png::CompressedTexture2D::660363771340374510::1685931889::1685931961
 [PIC]PlanetaVegeta111.png::CompressedTexture2D::3428907217432751834::1495471334::1685931960::1::::<><>::
 [Transformation]Saiyan.png::CompressedTexture2D::3274734526089383617::1490250620::1685931960::1::::<><>::
 [Vector]SaiyanMaleOzuro.png::CompressedTexture2D::5781052863624627577::1496286116::1685931960::1::::<><>::
-::res://Scenes/::1686004471
+::res://Images/GUI/::1686299412
+InfoBoxes.png::CompressedTexture2D::2906671086974873632::1686299412::1686299412::1::::<><>::
+::res://Scenes/::1686301409
+Character_Creation.tscn::PackedScene::821788049761394645::1686301409::0::1::::<><>::uid://b6v6whag4hcty
+GUI.tscn::PackedScene::4607548651524123758::1686301409::0::1::::<><>::uid://bhoapibnu4ctk
 IntroDisclaimer.cs::CSharpScript::-1::1685944530::0::1::::<><>::
-IntroDisclaimer.tscn::PackedScene::638776730600177044::1686004471::0::1::::<><>::res://Images/GameDisclaimer2.ogv<>res://Scenes/IntroDisclaimer.cs
+IntroDisclaimer.tscn::PackedScene::638776730600177044::1686076596::0::1::::<><>::res://Images/GameDisclaimer2.ogv<>res://Scenes/IntroDisclaimer.cs
 IntroLogo.cs::CSharpScript::-1::1685945316::0::1::::<><>::
-IntroLogo.tscn::PackedScene::6135985561466025666::1686004471::0::1::::<><>::res://Images/IntroLogo2.ogv<>res://Scenes/IntroLogo.cs
-New_Game.tscn::PackedScene::2607659323215684173::1686004471::0::1::::<><>::
+IntroLogo.tscn::PackedScene::6135985561466025666::1686076596::0::1::::<><>::res://Images/IntroLogo2.ogv<>res://Scenes/IntroLogo.cs
+New_Game.tscn::PackedScene::2607659323215684173::1686301409::0::1::::<><>::
 Test.tscn::PackedScene::4380537950246771902::1685933743::0::1::::<><>::
+::res://scenes/::0
+Character_Creation.tscn::PackedScene::821788049761394645::1686412977::0::1::::<><>::uid://b6v6whag4hcty

@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bngd5dk0eol3d"]
+[gd_scene load_steps=9 format=3 uid="uid://bngd5dk0eol3d"]
 
+[ext_resource type="Theme" uid="uid://dcvnuat3do8qk" path="res://assets/DarkTheme/Dark.theme" id="1_diwbe"]
 [ext_resource type="Script" path="res://menu.cs" id="1_unvhg"]
 [ext_resource type="Texture2D" uid="uid://jn5dhvlt2kxq" path="res://Images/VegetaStill.png" id="2_deedx"]
 [ext_resource type="Texture2D" uid="uid://comndja2ypf10" path="res://Images/[Vector]SaiyanMaleOzuro.png" id="4_64ofg"]
@@ -19,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_diwbe")
 script = ExtResource("1_unvhg")
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
