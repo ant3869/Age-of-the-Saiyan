@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://bljvmoqil87d4"]
 
 [ext_resource type="Script" path="res://scenes/SciFi_Attribute_Script.gd" id="1_8e5xd"]
-[ext_resource type="Texture2D" uid="uid://raxg11vs6hti" path="res://images/GUI/Panels/starcraft_lineboxesSmallBlue.png" id="2_86hx7"]
-[ext_resource type="Texture2D" uid="uid://clxonhsa2t23u" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueNormal_Min.png" id="2_kvir0"]
-[ext_resource type="Texture2D" uid="uid://dnb78smi0tk6w" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueButtonPressed_Min.png" id="3_ht4ke"]
-[ext_resource type="Texture2D" uid="uid://bjlxrrkx3kvpg" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueHover_Min.png" id="4_gsosk"]
-[ext_resource type="Texture2D" uid="uid://cq044u5yebekr" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueDisabled_Min.png" id="5_ab8qb"]
+[ext_resource type="Texture2D" path="res://images/GUI/Panels/starcraft_lineboxesSmallBlue.png" id="2_86hx7"]
+[ext_resource type="Texture2D" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueNormal_Min.png" id="2_kvir0"]
+[ext_resource type="Texture2D" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueButtonPressed_Min.png" id="3_ht4ke"]
+[ext_resource type="Texture2D" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueHover_Min.png" id="4_gsosk"]
+[ext_resource type="Texture2D" path="res://images/GUI/Buttons/Blue Small/PlusMinus/BlueDisabled_Min.png" id="5_ab8qb"]
 [ext_resource type="LabelSettings" uid="uid://dwjlc6fip5hgq" path="res://assets/Fonts/new_label_settings_29.tres" id="10_inped"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_777nc"]

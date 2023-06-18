@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://comndja2ypf10"
-path="res://.godot/imported/[Vector]SaiyanMaleOzuro.png-36e36fea01af4e7ef5c1fc9a2432c2cb.ctex"
+path="res://.godot/imported/[Vector]SaiyanMaleOzuro.png-006ac5192a4320d2aabc6cbb3107bc9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/[Vector]SaiyanMaleOzuro.png"
-dest_files=["res://.godot/imported/[Vector]SaiyanMaleOzuro.png-36e36fea01af4e7ef5c1fc9a2432c2cb.ctex"]
+source_file="res://images/[Vector]SaiyanMaleOzuro.png"
+dest_files=["res://.godot/imported/[Vector]SaiyanMaleOzuro.png-006ac5192a4320d2aabc6cbb3107bc9b.ctex"]
 
 [params]
 

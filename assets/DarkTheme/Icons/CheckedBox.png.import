@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmwkntqfk2wcn"
-path="res://.godot/imported/[Transformation]Saiyan.png-ea0a61a624f6ee441d1ca21116507062.ctex"
+uid="uid://ckfcfsmwsmjph"
+path="res://.godot/imported/CheckedBox.png-fd574cc6dc7834cf860f92b75f35da80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/[Transformation]Saiyan.png"
-dest_files=["res://.godot/imported/[Transformation]Saiyan.png-ea0a61a624f6ee441d1ca21116507062.ctex"]
+source_file="res://assets/DarkTheme/Icons/CheckedBox.png"
+dest_files=["res://.godot/imported/CheckedBox.png-fd574cc6dc7834cf860f92b75f35da80.ctex"]
 
 [params]
 

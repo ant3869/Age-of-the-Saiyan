@@ -1,15 +1,5 @@
-res://addons/UIDesignTool/addons/ui_design_tool/scripts/Utils.gd
-res://new_style_box_flat.tres
-res://scenes/main.tscn
-res://gofot .tscn
-res://scenes/New_Game.tscn
-res://scenes/Character_Creation.tscn
-res://scenes/GUI.tscn
-res://menu.tscn
-res://scenes/ui.tscn
-res://assets/DarkTheme/Dark.theme
-res://assets/DarkTheme/StyleBox/ButtonNormal.stylebox
-res://assets/DarkTheme/StyleBox/ButtonPressed.stylebox
-res://assets/DarkTheme/StyleBox/ButtonHover.stylebox
-res://assets/DarkTheme/StyleBox/ButtonFocus.stylebox
 res://assets/DarkTheme/StyleBox/Panel.stylebox
+res://assets/DarkTheme/Dark.theme
+res://assets/Fonts/new_label_settings_29.tres
+res://menu.cs
+res://scenes/SciFi_Attribute.tscn

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmwkntqfk2wcn"
-path="res://.godot/imported/[Transformation]Saiyan.png-ea0a61a624f6ee441d1ca21116507062.ctex"
+uid="uid://btw7jkv7e1ial"
+path="res://.godot/imported/InfoBoxes.png-7be492fb92b598e9d0e7fed149fcd552.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/[Transformation]Saiyan.png"
-dest_files=["res://.godot/imported/[Transformation]Saiyan.png-ea0a61a624f6ee441d1ca21116507062.ctex"]
+source_file="res://images/GUI/InfoBoxes.png"
+dest_files=["res://.godot/imported/InfoBoxes.png-7be492fb92b598e9d0e7fed149fcd552.ctex"]
 
 [params]
 
