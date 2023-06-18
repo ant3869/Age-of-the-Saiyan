@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo38uov3kt54q"
-path="res://.godot/imported/[PIC]PlanetaVegeta111.png-9cf150763afab097bf0794b346183fbf.ctex"
+path="res://.godot/imported/[PIC]PlanetaVegeta111.png-b2d096159355594896ea712a198ca52a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/[PIC]PlanetaVegeta111.png"
-dest_files=["res://.godot/imported/[PIC]PlanetaVegeta111.png-9cf150763afab097bf0794b346183fbf.ctex"]
+source_file="res://Images/[PIC]PlanetaVegeta111.png"
+dest_files=["res://.godot/imported/[PIC]PlanetaVegeta111.png-b2d096159355594896ea712a198ca52a.ctex"]
 
 [params]
 

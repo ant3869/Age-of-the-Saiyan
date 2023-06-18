@@ -10,15 +10,15 @@ public partial class menu : Control
 		GetSelectedButton("start").GrabFocus();
 	}
 
-	private int GetButtonCount()
-	{
-		return GetNode<BoxContainer>("Buttons").GetChildCount();
-	}
+    private int GetButtonCount()
+    {
+        return GetNode<BoxContainer>("Buttons").GetChildCount();
+    }
 
-	private Button GetSelectedButton(string s)
-	{
-		return GetNodeOrNull<Button>($"VBoxContainer/{s}");
-	}
+    private Button GetSelectedButton(string s)
+    {
+        return GetNodeOrNull<Button>($"VBoxContainer/{s}");
+    }
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
@@ -34,7 +34,7 @@ public partial class menu : Control
 	{
 		// Replace with function body.
 	}
-
+	
 	private void _on_exit_pressed()
 	{
 		GetTree().Quit();

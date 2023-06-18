@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7es2q20iefrh"
-path="res://.godot/imported/Dragon Ball Title Blue.png-1d2d3ce18b071c27c755c1b03775c376.ctex"
+path="res://.godot/imported/Dragon Ball Title Blue.png-aa362ccdc362807d3dbc87ecbff36576.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Dragon Ball Title Blue.png"
-dest_files=["res://.godot/imported/Dragon Ball Title Blue.png-1d2d3ce18b071c27c755c1b03775c376.ctex"]
+source_file="res://Images/Dragon Ball Title Blue.png"
+dest_files=["res://.godot/imported/Dragon Ball Title Blue.png-aa362ccdc362807d3dbc87ecbff36576.ctex"]
 
 [params]
 

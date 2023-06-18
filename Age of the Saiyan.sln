@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Age of the Saiyan", "Age of the Saiyan.csproj", "{0B790F6E-B04D-490B-B6EA-173221A74FB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Age of the Saiyan", "Age of the Saiyan.csproj", "{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{0B790F6E-B04D-490B-B6EA-173221A74FB1}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{C63A4867-1A81-45B6-8FB6-A6EC6D78A089}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal
