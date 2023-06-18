@@ -1,0 +1,123 @@
+[gd_scene load_steps=17 format=3 uid="uid://dswff5iijvbvj"]
+
+[ext_resource type="Script" path="res://scenes/Stat_Assigner.gd" id="1_1ei5v"]
+[ext_resource type="Texture2D" uid="uid://cdix67ugg1acg" path="res://images/GUI/Buttons/diablplusminusRG.png" id="2_0fae4"]
+[ext_resource type="Theme" uid="uid://cbrjv7bd0ha4n" path="res://assets/UI/base_theme.tres" id="3_d6fgk"]
+[ext_resource type="FontFile" uid="uid://cvvihq0otuwkm" path="res://assets/UI/Fonts/aAbsoluteEmpire.otf" id="4_44m3e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4p2u"]
+atlas = ExtResource("2_0fae4")
+region = Rect2(1, 69, 61, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfl1r"]
+atlas = ExtResource("2_0fae4")
+region = Rect2(1, 69, 61, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4guxp"]
+atlas = ExtResource("2_0fae4")
+region = Rect2(1, 139, 61, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_taobo"]
+atlas = ExtResource("2_0fae4")
+region = Rect2(1, 0, 61, 67)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qftvw"]
+load_path = "res://.godot/imported/diablplusminusRG.png-6d8a288f7e5867fb6e7afdb3411d58db.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5cle"]
+atlas = SubResource("CompressedTexture2D_qftvw")
+region = Rect2(69, 69, 61, 67)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3jpai"]
+load_path = "res://.godot/imported/diablplusminusRG.png-6d8a288f7e5867fb6e7afdb3411d58db.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ss818"]
+atlas = SubResource("CompressedTexture2D_3jpai")
+region = Rect2(69, 69, 61, 67)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_st0mw"]
+load_path = "res://.godot/imported/diablplusminusRG.png-6d8a288f7e5867fb6e7afdb3411d58db.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jwd5"]
+atlas = SubResource("CompressedTexture2D_st0mw")
+region = Rect2(69, 139, 61, 67)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i4jj5"]
+load_path = "res://.godot/imported/diablplusminusRG.png-6d8a288f7e5867fb6e7afdb3411d58db.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8v4ru"]
+atlas = SubResource("CompressedTexture2D_i4jj5")
+region = Rect2(69, 0, 61, 67)
+
+[node name="Container" type="HBoxContainer"]
+offset_left = 3.0
+offset_right = 267.0
+offset_bottom = 55.0
+theme_override_constants/separation = 17
+alignment = 1
+script = ExtResource("1_1ei5v")
+stat_name = "int"
+stat_value = 10
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 2
+select_mode = 1
+auto_height = true
+item_count = 1
+max_columns = 4
+same_column_width = true
+fixed_column_width = 34
+item_0/text = "Stat"
+item_0/selectable = false
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/h_separation = 18
+columns = 4
+
+[node name="StatName" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 28)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("4_44m3e")
+theme_override_font_sizes/font_size = 25
+text = "int"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DecreaseButton" type="TextureButton" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_d4p2u")
+texture_pressed = SubResource("AtlasTexture_wfl1r")
+texture_hover = SubResource("AtlasTexture_4guxp")
+texture_disabled = SubResource("AtlasTexture_taobo")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StatValue" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_d6fgk")
+theme_override_fonts/font = ExtResource("4_44m3e")
+theme_override_font_sizes/font_size = 25
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IncreaseButton" type="TextureButton" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_g5cle")
+texture_pressed = SubResource("AtlasTexture_ss818")
+texture_hover = SubResource("AtlasTexture_0jwd5")
+texture_disabled = SubResource("AtlasTexture_8v4ru")
+ignore_texture_size = true
+stretch_mode = 4

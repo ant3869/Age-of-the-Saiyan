@@ -1,0 +1,20 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture2D"
+uid="uid://xg2olj4h63ll"
+path="res://.godot/imported/High-Tech UI.png-a89aa3f4c2dc1b22502c660f3c75bf34.res"
+group_file="res://images/GUI/High-Tech_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://images/GUI/High-Tech UI.png"
+dest_files=["res://.godot/imported/High-Tech UI.png-a89aa3f4c2dc1b22502c660f3c75bf34.res"]
+
+[params]
+
+atlas_file="res://images/GUI/High-Tech_atlas.png"
+import_mode=0
+crop_to_region=false
+trim_alpha_border_from_region=true

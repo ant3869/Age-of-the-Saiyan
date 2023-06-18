@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://jdotaxx25fng"]
 
-[ext_resource type="VideoStream" path="res://Images/GameDisclaimer2.ogv" id="1_k2755"]
+[ext_resource type="VideoStream" path="res://images/GameDisclaimer2.ogv" id="1_k2755"]
 [ext_resource type="Script" path="res://scenes/IntroDisclaimer.cs" id="2_eh3ks"]
 
 [node name="IntroDisclaimer" type="VideoStreamPlayer"]

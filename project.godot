@@ -13,12 +13,13 @@ config_version=5
 config/name="Age of the Saiyan"
 run/main_scene="res://scenes/IntroDisclaimer.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://images/RedRoyalCrest.png"
 
 [dotnet]
 
 project/assembly_name="Age of the Saiyan"
+export/include_scripts_content=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/UIDesignTool/addons/ui_design_tool/plugin.cfg")
+enabled=PackedStringArray("res://addons/ui_design_tool/plugin.cfg")

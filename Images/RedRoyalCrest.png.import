@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4204ynta4yno"
-path="res://.godot/imported/RedRoyalCrest.png-cd1ecf5b07e10474ee013aa514dc90a2.ctex"
+path="res://.godot/imported/RedRoyalCrest.png-cf5759345cb82f75b978c7c636b60b53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/RedRoyalCrest.png"
-dest_files=["res://.godot/imported/RedRoyalCrest.png-cd1ecf5b07e10474ee013aa514dc90a2.ctex"]
+source_file="res://images/RedRoyalCrest.png"
+dest_files=["res://.godot/imported/RedRoyalCrest.png-cf5759345cb82f75b978c7c636b60b53.ctex"]
 
 [params]
 

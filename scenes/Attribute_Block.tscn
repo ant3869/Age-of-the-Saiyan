@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyksnmk0yflkb"]
+
+[ext_resource type="Script" path="res://scenes/Stat_Block.gd" id="1_1xglq"]
+[ext_resource type="PackedScene" uid="uid://bljvmoqil87d4" path="res://scenes/SciFi_Attribute.tscn" id="1_j53gr"]
+
+[node name="AttributeBlock" type="Control"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_1xglq")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+offset_right = 350.0
+offset_bottom = 50.0
+
+[node name="Container" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="INT" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+custom_minimum_size = Vector2(350.028, 50)
+layout_mode = 2
+
+[node name="STR" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+stat_value = 4
+
+[node name="DEX" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+
+[node name="STM" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+
+[node name="SPD" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
