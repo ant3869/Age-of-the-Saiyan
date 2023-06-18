@@ -2,9 +2,9 @@
 
 [ext_resource type="Theme" uid="uid://dcvnuat3do8qk" path="res://assets/DarkTheme/Dark.theme" id="1_diwbe"]
 [ext_resource type="Script" path="res://menu.cs" id="1_unvhg"]
-[ext_resource type="Texture2D" uid="uid://jn5dhvlt2kxq" path="res://Images/VegetaStill.png" id="2_deedx"]
-[ext_resource type="Texture2D" uid="uid://comndja2ypf10" path="res://Images/[Vector]SaiyanMaleOzuro.png" id="4_64ofg"]
-[ext_resource type="Texture2D" uid="uid://cthpo1nvglts5" path="res://Images/Game_Title.png" id="5_776s3"]
+[ext_resource type="Texture2D" uid="uid://jn5dhvlt2kxq" path="res://images/VegetaStill.png" id="2_deedx"]
+[ext_resource type="Texture2D" uid="uid://comndja2ypf10" path="res://images/[Vector]SaiyanMaleOzuro.png" id="4_64ofg"]
+[ext_resource type="Texture2D" uid="uid://cthpo1nvglts5" path="res://images/Game_Title.png" id="5_776s3"]
 [ext_resource type="StyleBox" uid="uid://dagj0qcmxa66o" path="res://new_style_box_flat.tres" id="5_f7yc0"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8h2rv"]

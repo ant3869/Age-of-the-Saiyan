@@ -21,4 +21,4 @@ project/assembly_name="Age of the Saiyan"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/UIDesignTool/addons/ui_design_tool/plugin.cfg")
+enabled=PackedStringArray()

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=2 format=3 uid="uid://pdibfhi6uv5b"]
+
+[ext_resource type="Script" path="res://stats/character_stats.gd" id="1_cuvtp"]
+
+[resource]
+script = ExtResource("1_cuvtp")
+name = "Goku"
+rank = 0
+str = 3
+dex = 3
+ine = 2
+spd = 3
+sta = 4
+hp = 0
+ki = 0
+xp = 0

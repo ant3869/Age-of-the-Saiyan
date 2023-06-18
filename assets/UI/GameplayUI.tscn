@@ -1,0 +1,262 @@
+[gd_scene load_steps=18 format=3 uid="uid://8gy03sdag834"]
+
+[ext_resource type="Texture2D" uid="uid://n0pruhnb75hr" path="res://images/GUI/Buttons/diablo_ibuttons2.png" id="1_utvmq"]
+[ext_resource type="Texture2D" uid="uid://12taj1dqf53o" path="res://images/GUI/Bars/StatusText.png" id="2_jbqio"]
+[ext_resource type="FontFile" uid="uid://b8qbba61ijq5v" path="res://assets/UI/Fonts/Aero.ttf" id="3_0csox"]
+[ext_resource type="Texture2D" uid="uid://bgfj7qsxdna5f" path="res://images/GUI/Bars/Bars.png" id="3_ebueg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tshh6"]
+atlas = ExtResource("1_utvmq")
+region = Rect2(1, 3, 355, 58)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h8tdw"]
+texture = SubResource("AtlasTexture_tshh6")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8wwd"]
+atlas = ExtResource("1_utvmq")
+region = Rect2(1, 73, 355, 58)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_odpmu"]
+texture = SubResource("AtlasTexture_b8wwd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_agotx"]
+
+[sub_resource type="Theme" id="Theme_tulw0"]
+Button/font_sizes/font_size = 12
+Button/styles/hover = SubResource("StyleBoxTexture_h8tdw")
+Button/styles/normal = SubResource("StyleBoxTexture_odpmu")
+Label/styles/normal = SubResource("StyleBoxTexture_agotx")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nik3u"]
+atlas = ExtResource("2_jbqio")
+region = Rect2(2, 1, 42, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ooklq"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 180, 496, 21)
+margin = Rect2(0.213, 0.59, 0, 1.458)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06anx"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 4, 496, 21)
+margin = Rect2(-0.086, 0.623, 0, 1.88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn6q1"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 180, 496, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx4ce"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 38, 496, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_doo6e"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 180, 496, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omkr7"]
+atlas = ExtResource("3_ebueg")
+region = Rect2(4, 73, 496, 21)
+
+[node name="GameplayUI" type="Control"]
+y_sort_enabled = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_tulw0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -4.0
+offset_right = 665.0
+offset_bottom = 524.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 415.0
+offset_top = 124.0
+offset_right = 434.0
+offset_bottom = 143.0
+scale = Vector2(0.428, 0.428)
+texture = SubResource("AtlasTexture_nik3u")
+expand_mode = 5
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -29.5
+offset_top = 2.299
+offset_right = 29.5
+offset_bottom = 20.299
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.964706, 0.65098, 0.160784, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.843137, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("3_0csox")
+theme_override_font_sizes/font_size = 24
+text = "Header"
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Test"
+
+[node name="LineEdit" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 81.0
+offset_right = 424.0
+offset_bottom = 112.0
+text = "Raddock Boneboy"
+caret_blink = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel"]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 348.0
+offset_right = 456.0
+offset_bottom = 375.0
+value = 50.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+offset_left = 411.0
+offset_top = 119.0
+offset_right = 653.0
+offset_bottom = 186.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Bars" type="VBoxContainer" parent="Panel/MarginContainer/PanelContainer"]
+top_level = true
+layout_mode = 2
+theme_override_constants/separation = -6
+alignment = 1
+
+[node name="TextureProgressBar4" type="TextureProgressBar" parent="Panel/MarginContainer/PanelContainer/Bars"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+value = 60.0
+rounded = true
+nine_patch_stretch = true
+texture_under = SubResource("AtlasTexture_ooklq")
+texture_progress = SubResource("AtlasTexture_06anx")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Panel/MarginContainer/PanelContainer/Bars"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+value = 25.0
+rounded = true
+nine_patch_stretch = true
+texture_under = SubResource("AtlasTexture_jn6q1")
+texture_progress = SubResource("AtlasTexture_bx4ce")
+
+[node name="TextureProgressBar3" type="TextureProgressBar" parent="Panel/MarginContainer/PanelContainer/Bars"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 2
+value = 50.0
+rounded = true
+nine_patch_stretch = true
+texture_under = SubResource("AtlasTexture_doo6e")
+texture_progress = SubResource("AtlasTexture_omkr7")
+
+[node name="Menu Buttons" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 119.0
+offset_right = 182.0
+offset_bottom = 264.0
+
+[node name="Button" type="Button" parent="Panel/Menu Buttons"]
+layout_mode = 2
+text = "new"
+
+[node name="Button4" type="Button" parent="Panel/Menu Buttons"]
+layout_mode = 2
+text = "load"
+
+[node name="Button2" type="Button" parent="Panel/Menu Buttons"]
+layout_mode = 2
+text = "options"
+
+[node name="Button5" type="Button" parent="Panel/Menu Buttons"]
+layout_mode = 2
+text = "credits"
+
+[node name="Button3" type="Button" parent="Panel/Menu Buttons"]
+layout_mode = 2
+text = "quit
+"
+
+[node name="Switch Buttons" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 183.0
+offset_right = 400.0
+offset_bottom = 230.0
+theme_override_constants/separation = -1
+
+[node name="CheckBoxs" type="HBoxContainer" parent="Panel/Switch Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 7.83
+
+[node name="CheckBox" type="CheckBox" parent="Panel/Switch Buttons/CheckBoxs"]
+layout_mode = 2
+
+[node name="CheckBox2" type="CheckBox" parent="Panel/Switch Buttons/CheckBoxs"]
+layout_mode = 2
+button_pressed = true
+keep_pressed_outside = true
+flat = true
+
+[node name="CheckBox3" type="CheckBox" parent="Panel/Switch Buttons/CheckBoxs"]
+layout_mode = 2
+disabled = true
+
+[node name="Toggle Buttons" type="HBoxContainer" parent="Panel/Switch Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
+
+[node name="CheckButton" type="CheckButton" parent="Panel/Switch Buttons/Toggle Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.34
+
+[node name="CheckButton2" type="CheckButton" parent="Panel/Switch Buttons/Toggle Buttons"]
+layout_mode = 2
+button_pressed = true
+
+[node name="CheckButton3" type="CheckButton" parent="Panel/Switch Buttons/Toggle Buttons"]
+layout_mode = 2
+disabled = true

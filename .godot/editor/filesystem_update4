@@ -1,5 +1,9 @@
+res://scenes/SciFi_Attribute.tscn
 res://assets/DarkTheme/StyleBox/Panel.stylebox
 res://assets/DarkTheme/Dark.theme
+res://new_style_box_flat.tres
+res://scenes/SciFi_Attribute_Script.gd
 res://assets/Fonts/new_label_settings_29.tres
-res://menu.cs
-res://scenes/SciFi_Attribute.tscn
+res://scenes/IntroDisclaimer.cs
+res://menu.tscn
+res://scenes/Attribute_Block.tscn

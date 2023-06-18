@@ -18,27 +18,41 @@ script = ExtResource("1_1xglq")
 layout_mode = 1
 offset_right = 350.0
 offset_bottom = 50.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="Container" type="VBoxContainer" parent="Margin"]
 layout_mode = 2
+theme_override_constants/separation = -1
 
 [node name="INT" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 custom_minimum_size = Vector2(350.028, 50)
 layout_mode = 2
+stat_name = "Intellegence"
+stat_value = 15
 
 [node name="STR" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
-stat_value = 4
+stat_name = "Strength"
+stat_value = 15
 
 [node name="DEX" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
+stat_name = "Dexterity"
+stat_value = 15
 
 [node name="STM" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
+stat_name = "Stamina"
+stat_value = 15
 
 [node name="SPD" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
+stat_name = "Speed"
+stat_value = 15
