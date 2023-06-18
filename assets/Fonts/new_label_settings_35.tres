@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cb20oto4xjev4"]
+
+[ext_resource type="FontFile" uid="uid://da6odkke1m0qt" path="res://assets/Fonts/fontfile_geizer.tres" id="1_uqkot"]
+
+[resource]
+font = ExtResource("1_uqkot")
+font_size = 35

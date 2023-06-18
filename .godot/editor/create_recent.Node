@@ -1,3 +1,5 @@
+TextureRect
+TextEdit
 CanvasLayer
 Camera2D
 LineEdit
@@ -5,7 +7,6 @@ CheckBox
 CheckButton
 Button
 ReferenceRect
-TextureRect
 Sprite2D
 VBoxContainer
 PanelContainer

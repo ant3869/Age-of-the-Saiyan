@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bsg3xnjoou3hq"]
+
+[ext_resource type="FontFile" uid="uid://c64tyisq4ntnb" path="res://assets/Fonts/fontfile_geizer_20_green.tres" id="1_okr2j"]
+
+[resource]
+font = ExtResource("1_okr2j")
+font_size = 20
+font_color = Color(0, 1, 0.266667, 1)

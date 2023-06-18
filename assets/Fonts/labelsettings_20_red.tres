@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c83ewu4rr7a3j"]
+
+[ext_resource type="FontFile" uid="uid://bxfr48e1yh6kg" path="res://assets/Fonts/fontfile_geizer_20_red.tres" id="1_sle3s"]
+
+[resource]
+font = ExtResource("1_sle3s")
+font_size = 20
+font_color = Color(1, 0, 0, 1)

@@ -1,0 +1,495 @@
+[gd_scene load_steps=18 format=3 uid="uid://dgq5nbr6ekjh1"]
+
+[ext_resource type="Texture2D" uid="uid://duloypsvq45gx" path="res://images/GUI/Boxes/Blue_MenuBox.png" id="1_ba5sm"]
+[ext_resource type="Texture2D" uid="uid://c23m5xqx0ep7h" path="res://images/GUI/Boxes/BlueBox.png" id="2_xhew8"]
+[ext_resource type="LabelSettings" uid="uid://45xasnwfp5g3" path="res://assets/Fonts/labelsettings_35_grey.tres" id="3_sot5y"]
+[ext_resource type="LabelSettings" uid="uid://ccyh3cg2ip4r7" path="res://assets/Fonts/labelsettings_25.tres" id="4_11wls"]
+[ext_resource type="Texture2D" uid="uid://do4ayxjc124yf" path="res://characters/Images/texture_longhair_saiyan.tres" id="4_nto26"]
+[ext_resource type="LabelSettings" uid="uid://bsg3xnjoou3hq" path="res://assets/Fonts/labelsettings_20_green.tres" id="6_ks3fh"]
+[ext_resource type="PackedScene" uid="uid://c7akdmp6mydil" path="res://scenes/Attribute_Block.tscn" id="7_82yny"]
+[ext_resource type="LabelSettings" uid="uid://cb20oto4xjev4" path="res://assets/Fonts/new_label_settings_35.tres" id="10_1hyv1"]
+[ext_resource type="LabelSettings" uid="uid://d32slw12rx65q" path="res://assets/Fonts/labelsettings_20_white.tres" id="12_dil14"]
+[ext_resource type="LabelSettings" uid="uid://c83ewu4rr7a3j" path="res://assets/Fonts/labelsettings_20_red.tres" id="13_gve60"]
+[ext_resource type="Texture2D" uid="uid://cjrwc0r7yv0ri" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Normal.png" id="16_qdtbi"]
+[ext_resource type="Texture2D" uid="uid://b4204ynta4yno" path="res://images/RedRoyalCrest.png" id="17_naiyv"]
+[ext_resource type="Texture2D" uid="uid://kr2xgxxj2u7m" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Pressed.png" id="17_v6n4k"]
+[ext_resource type="Texture2D" uid="uid://dhcn75kkj7q6x" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Hover.png" id="18_hragr"]
+[ext_resource type="Texture2D" uid="uid://3wvsejajbsuk" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Disabled.png" id="19_12qkc"]
+[ext_resource type="Texture2D" uid="uid://bu7yb3jtjwb7c" path="res://images/Items/SaiyanArmor_1.png" id="24_o47ni"]
+[ext_resource type="Texture2D" uid="uid://bewe10x5rahwg" path="res://images/Items/Chest.png" id="25_3ih0v"]
+
+[node name="CharacterSheet" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SheetBackground" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ba5sm")
+region_rect = Rect2(4, 4, 1577, 872)
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 34
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="CharacterBackground" type="NinePatchRect" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+texture = ExtResource("2_xhew8")
+region_rect = Rect2(17, 7, 486, 454)
+patch_margin_left = 15
+patch_margin_right = 15
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/CharacterBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 25
+
+[node name="PictureContainer" type="VBoxContainer" parent="Margin/HBoxContainer/CharacterBackground/Margin"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Margin/HBoxContainer/CharacterBackground/Margin/PictureContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Raddock"
+label_settings = ExtResource("3_sot5y")
+horizontal_alignment = 1
+
+[node name="CharacterTexture" type="TextureRect" parent="Margin/HBoxContainer/CharacterBackground/Margin/PictureContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("4_nto26")
+expand_mode = 1
+stretch_mode = 4
+flip_h = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MainStats" type="VBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = -7
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+custom_minimum_size = Vector2(150, 25)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 265
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="PointsContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 60
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/PointsContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+text = "Points"
+label_settings = ExtResource("4_11wls")
+
+[node name="Points" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/PointsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "5"
+label_settings = ExtResource("6_ks3fh")
+horizontal_alignment = 2
+
+[node name="AttributeBlock" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats" instance=ExtResource("7_82yny")]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="ConfirmContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 130
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 185
+theme_override_constants/margin_top = 146
+
+[node name="ConfirmButton" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer/Margin"]
+custom_minimum_size = Vector2(75, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer/Margin/ConfirmButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -14.5
+offset_right = 43.0
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Confirm"
+label_settings = ExtResource("12_dil14")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DerivedStats" type="ScrollContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Level" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Level"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level"
+label_settings = ExtResource("4_11wls")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Level"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1"
+label_settings = ExtResource("6_ks3fh")
+
+[node name="Hitpoints" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Hitpoints"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Hitpoints"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Hitpoints"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "300"
+label_settings = ExtResource("12_dil14")
+
+[node name="Ki" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Ki"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ki"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Ki"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "150"
+label_settings = ExtResource("12_dil14")
+
+[node name="Stamina" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Stamina"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Stamina"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Stamina"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "50"
+label_settings = ExtResource("13_gve60")
+
+[node name="APR" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/APR"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "APR"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/APR"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "5
+"
+label_settings = ExtResource("4_11wls")
+
+[node name="Attack" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Attack"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Attack"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Attack"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "50"
+label_settings = ExtResource("4_11wls")
+
+[node name="Defense" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Defense"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Defense"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Defense"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "50"
+label_settings = ExtResource("4_11wls")
+
+[node name="Experience" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
+custom_minimum_size = Vector2(340, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Experience"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Experience"
+label_settings = ExtResource("12_dil14")
+
+[node name="Value" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer/Experience"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "50"
+label_settings = ExtResource("4_11wls")
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="DisplayButtons" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Stats" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons/Stats"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -16.5
+offset_right = 33.5
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Stats"
+label_settings = ExtResource("10_1hyv1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Skills" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons/Skills"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -16.5
+offset_right = 38.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Skills"
+label_settings = ExtResource("10_1hyv1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Abilities" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons/Abilities"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -16.5
+offset_right = 67.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Abilities"
+label_settings = ExtResource("10_1hyv1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Equipment" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons/Equipment"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -16.5
+offset_right = 67.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Equipment"
+label_settings = ExtResource("10_1hyv1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Overlays" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Armor" type="TextureRect" parent="Overlays"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 53.0
+offset_right = 352.0
+offset_bottom = 85.0
+texture = ExtResource("24_o47ni")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="WeightedClothing" type="TextureRect" parent="Overlays"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 93.0
+offset_right = 352.0
+offset_bottom = 125.0
+texture = ExtResource("25_3ih0v")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Affliation" type="TextureRect" parent="Overlays"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_top = 0.7
+anchor_right = 2.975
+anchor_bottom = 3.1
+texture = ExtResource("17_naiyv")
+expand_mode = 1

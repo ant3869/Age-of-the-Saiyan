@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c2gh4b8n44gwn"]
+
+[ext_resource type="FontFile" uid="uid://ck0yx6mapbaiq" path="res://assets/Fonts/new_font_file.tres" id="1_m58gj"]
+
+[resource]
+font = ExtResource("1_m58gj")
+font_size = 25
+font_color = Color(1, 0, 0, 1)

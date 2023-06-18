@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://45xasnwfp5g3"]
+
+[ext_resource type="FontFile" uid="uid://ck0yx6mapbaiq" path="res://assets/Fonts/new_font_file.tres" id="1_mxosp"]
+
+[resource]
+font = ExtResource("1_mxosp")
+font_size = 35
+font_color = Color(0.654902, 0.654902, 0.654902, 1)
+outline_size = 2
+outline_color = Color(0.0823529, 0.0823529, 0.0823529, 1)
