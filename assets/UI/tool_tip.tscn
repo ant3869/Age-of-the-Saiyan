@@ -1,0 +1,119 @@
+[gd_scene load_steps=10 format=3 uid="uid://fay80gx5tmjg"]
+
+[ext_resource type="Script" path="res://assets/UI/tool_tip.gd" id="1_rrse0"]
+[ext_resource type="Texture2D" uid="uid://cmbnuotmdh7cb" path="res://images/GUI/Boxes/High-Tech45.png" id="1_yxbcm"]
+[ext_resource type="FontFile" uid="uid://cvvihq0otuwkm" path="res://assets/UI/Fonts/aAbsoluteEmpire.otf" id="2_l7lun"]
+[ext_resource type="FontFile" uid="uid://b8qbba61ijq5v" path="res://assets/UI/Fonts/Aero.ttf" id="2_mivxp"]
+[ext_resource type="FontFile" uid="uid://dn6hcelq4vn60" path="res://assets/UI/Fonts/Geizer.otf" id="3_2xixn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_psv2n"]
+font = ExtResource("2_mivxp")
+font_size = 14
+shadow_color = Color(0, 0, 0, 0.67451)
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_d8awu"]
+font = ExtResource("2_l7lun")
+outline_size = 1
+outline_color = Color(1, 0.866667, 0.109804, 1)
+shadow_size = 3
+shadow_color = Color(0.117647, 0.117647, 0.117647, 0.678431)
+shadow_offset = Vector2(3, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4k6vi"]
+font = ExtResource("3_2xixn")
+font_size = 20
+shadow_color = Color(0, 0, 0, 0.619608)
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2slir"]
+atlas = ExtResource("1_yxbcm")
+region = Rect2(0, 96, 233, 92)
+
+[node name="ToolTip" type="Control"]
+custom_minimum_size = Vector2(400, 180)
+layout_mode = 3
+anchor_right = 0.347
+anchor_bottom = 0.278
+offset_right = 0.255981
+offset_bottom = -0.144012
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rrse0")
+title_text = "dexterity"
+
+[node name="Rect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yxbcm")
+region_rect = Rect2(0, 96, 233, 92)
+patch_margin_left = 15
+patch_margin_top = 10
+patch_margin_right = 15
+patch_margin_bottom = 10
+
+[node name="Margin2" type="MarginContainer" parent="Rect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.062
+anchor_top = 0.072
+anchor_right = 0.802
+anchor_bottom = 0.206
+offset_left = 1.2
+offset_top = 0.039999
+offset_right = 0.199982
+offset_bottom = -0.0800018
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Rect/Margin2"]
+layout_mode = 2
+
+[node name="Type" type="Label" parent="Rect/Margin2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Attribute"
+label_settings = SubResource("LabelSettings_psv2n")
+
+[node name="Title" type="Label" parent="Rect/Margin2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+text = "Intellegence"
+label_settings = SubResource("LabelSettings_d8awu")
+horizontal_alignment = 1
+
+[node name="Margin" type="MarginContainer" parent="Rect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.082
+anchor_top = 0.239
+anchor_right = 0.952
+anchor_bottom = 0.933
+offset_left = 0.200001
+offset_top = -0.0200005
+offset_right = 0.199982
+offset_bottom = 1.06
+
+[node name="Desccription" type="Label" parent="Rect/Margin"]
+layout_mode = 2
+text = "<This is a desciption stand-in hubby bubble do damn double This is a desciption stand-in hubby bubble do damn double This is a desciption stand-in hubby bubble do damn double This is a desciption stand-in hubby bubble do damn double >"
+label_settings = SubResource("LabelSettings_4k6vi")
+autowrap_mode = 3
+
+[node name="ToolTip" type="Popup" parent="."]
+size = Vector2i(400, 180)
+
+[node name="TextureRect" type="TextureRect" parent="ToolTip"]
+visible = false
+custom_minimum_size = Vector2(400, 180)
+offset_right = 400.0
+offset_bottom = 180.0
+texture = SubResource("AtlasTexture_2slir")
+expand_mode = 1

@@ -1,12 +1,13 @@
 2a60927148abd1d33b818b535e306557
-::res://::1687121031
+::res://::1687241772
 export_presets.cfg::TextFile::-1::1687067728::0::1::::<><>::
 icon.svg::CompressedTexture2D::7941370350092529414::1685786330::1686421688::1::::<><>::
 menu.cs::CSharpScript::-1::1687071601::0::1::::<><>::
 menu.gdshader::Shader::-1::1685900526::0::1::::<><>::
-menu.tscn::PackedScene::3311497816467216439::1687075170::0::1::::<><>::uid://dcvnuat3do8qk<>res://menu.cs<>uid://jn5dhvlt2kxq<>uid://comndja2ypf10<>uid://cthpo1nvglts5<>uid://dagj0qcmxa66o
+menu.tscn::PackedScene::3311497816467216439::1687241772::0::1::::<><>::uid://dcvnuat3do8qk<>res://menu.cs<>uid://jn5dhvlt2kxq<>uid://comndja2ypf10<>uid://cthpo1nvglts5<>uid://dagj0qcmxa66o
 new_style_box_flat.tres::StyleBoxFlat::7172240259425391256::1687121261::0::1::::<><>::
 README.md::TextFile::-1::1686077466::0::1::::<><>::
+Screenshot 2023-06-18 171807.png::CompressedTexture2D::2590016701835231615::1687145584::1687145701::1::::<><>::
 stat_gd_script.gd::GDScript::-1::1687071601::0::1::::<>Control<>::
 ::res://addons/::1687067305
 ::res://addons/dialogue_manager/::1686946082
@@ -307,7 +308,7 @@ Toolbar.tscn::PackedScene::947466063348418113::1686076414::0::1::::<><>::res://a
 ::res://addons/ui_design_tool/scripts/::1686946083
 FontManager.gd::GDScript::-1::1686076414::0::1::::<>Object<>::
 Utils.gd::GDScript::-1::1686076414::0::1::::<>RefCounted<>::
-::res://assets/::1687072288
+::res://assets/::1687124868
 ::res://assets/Aestro/::1687072287
 aestro.tres::Theme::-1::1686602794::0::1::::<><>::res://assets/Aestro/RobotoCondensed.tres<>uid://c87qlgwj1rl3y
 LICENSE-RobotoMono.txt::TextFile::-1::1686587334::0::1::::<><>::
@@ -563,10 +564,20 @@ ButtonHover.stylebox::StyleBoxFlat::4662418132997039318::1687055960::0::1::::<><
 ButtonNormal.stylebox::StyleBoxFlat::8809875860842598193::1687055960::0::1::::<><>::
 ButtonPressed.stylebox::StyleBoxFlat::73673326367378597::1687055960::0::1::::<><>::
 Panel.stylebox::StyleBoxFlat::5478282736527948373::1687072452::0::1::::<><>::
-::res://assets/Fonts/::1687072452
-new_font_file.tres::FontFile::5527839175485820184::1687066117::0::1::::<><>::
-new_label_settings_29.tres::LabelSettings::8722669105743386904::1687121261::0::1::::<><>::uid://ck0yx6mapbaiq
-labelsettings_25.tres::LabelSettings::4963239257492001454::1687121146::0::1::::<><>::
+::res://assets/Fonts/::1687123988
+labelsettings_25.tres::LabelSettings::4963239257492001454::1687123986::0::1::::<><>::uid://ck0yx6mapbaiq
+new_font_file.tres::FontFile::5527839175485820184::1687123832::0::1::::<><>::
+new_label_settings_29.tres::LabelSettings::8722669105743386904::1687123986::0::1::::<><>::uid://ck0yx6mapbaiq
+new_label_settings_35.tres::LabelSettings::4900312357237315279::1687123986::0::1::::<><>::uid://da6odkke1m0qt
+labelsettings_25_green.tres::LabelSettings::4432164566102637174::1687123988::0::1::::<><>::
+labelsettings_25_red.tres::LabelSettings::6680803323242500009::1687121615::0::1::::<><>::uid://ck0yx6mapbaiq
+labelsettings_35_grey.tres::LabelSettings::2098805255468006568::1687123988::0::1::::<><>::uid://ck0yx6mapbaiq
+fontfile_geizer.tres::FontFile::7224113697634134551::1687121941::0::1::::<><>::
+labelsettings_20_white.tres::LabelSettings::9181401618835607088::1687123988::0::1::::<><>::uid://ck0yx6mapbaiq
+labelsettings_20_green.tres::LabelSettings::3663947982121731182::1687123988::0::1::::<><>::uid://c64tyisq4ntnb
+labelsettings_20_red.tres::LabelSettings::7147159036054627633::1687123988::0::1::::<><>::uid://bxfr48e1yh6kg
+fontfile_geizer_20_red.tres::FontFile::4012171693701893454::1687123877::0::1::::<><>::
+fontfile_geizer_20_green.tres::FontFile::7009759405708754367::1687123926::0::1::::<><>::
 ::res://assets/modern dark/::1687072288
 caret_down.png::CompressedTexture2D::8032294499433225898::1564693518::1686602100::1::::<><>::
 checkbox_checked.png::CompressedTexture2D::5964460768683528177::1564693518::1686602100::1::::<><>::
@@ -600,19 +611,24 @@ icon_close.svg::CompressedTexture2D::892419627822101815::1564693518::1686602100:
 icon_close_hilite.svg::CompressedTexture2D::3305314562878521032::1564693518::1686602100::1::::<><>::
 radio_checked.svg::CompressedTexture2D::7962808351287951703::1564693518::1686602100::1::::<><>::
 radio_unchecked.svg::CompressedTexture2D::4010865194390799026::1564693518::1686602100::1::::<><>::
-::res://assets/UI/::1687072288
+::res://assets/Textures/::1687125125
+scifi_label_background_250x31.tres::CompressedTexture2D::4812555637603148012::1687125125::0::1::::<><>::
+::res://assets/UI/::1687244331
 base_theme.tres::Theme::4878710269912151503::1687055960::0::1::::<><>::uid://d4f1lm0wi74ah<>uid://dvcxyqg8djyvc<>uid://dn6hcelq4vn60<>uid://k7dspprvx23q
 GameplayUI.tscn::PackedScene::2330121457850309609::1686942950::0::1::::<><>::uid://n0pruhnb75hr<>uid://12taj1dqf53o<>uid://b8qbba61ijq5v<>uid://bgfj7qsxdna5f
+tool_tip.tscn::PackedScene::352461680653864512::1687244331::0::1::::<><>::uid://cmbnuotmdh7cb
 sub_theme.tres::Theme::9059670301986267338::1686570166::0::1::::<><>::
-::res://assets/UI/Fonts/::1687072288
+::res://assets/UI/Fonts/::1687245412
 aAbsoluteEmpire.otf::FontFile::6290658132775614344::1586109098::1686452052::1::::<><>::
 Aero.ttf::FontFile::4735745119681119385::1366845446::1686452052::1::::<><>::
+Dream Orphans Bd.otf::FontFile::2399931424456059375::1687245412::1687245413::1::::<><>::
 Geizer.otf::FontFile::8136141547139563427::1517149920::1686452052::1::::<><>::
-new_label_settings_35.tres::LabelSettings::4900312357237315279::1687121261::0::1::::<><>::uid://dn6hcelq4vn60
+new_label_settings_35.tres::LabelSettings::4900312357237315279::1687121781::0::1::::<><>::uid://dn6hcelq4vn60
 ::res://characters/::1687072287
-goku.tres::Resource/CharacterStats::1059513583404804513::1686942008::0::1::::<><>::res://stats/character_stats.gd
-::res://characters/Images/::1687072287
+goku.tres::Resource/Resource::1059513583404804513::1686942008::0::1::::<><>::res://stats/character_stats.gd
+::res://characters/Images/::1687122083
 Dragon Ball RnR in Dragon Ball Multiverse p_4 by Chancellord on DeviantArt.png::CompressedTexture2D::8708311188457559327::1687020531::1687020531::1::::<><>::
+texture_longhair_saiyan.tres::CompressedTexture2D::8201816898000211745::1687122083::0::1::::<><>::
 ::res://data_Age of the Saiyan_x86_64/::1687066424
 Age of the Saiyan.deps.json::JSON::-1::1687066418::0::1::::<><>::
 Age of the Saiyan.runtimeconfig.json::JSON::-1::1687066418::0::1::::<><>::
@@ -744,18 +760,18 @@ SaiyanArmor_1.png::CompressedTexture2D::3857718123637172390::1687048281::1687048
 SensuBeans.png::CompressedTexture2D::9167157047612126806::1687048281::1687048282::1::::<><>::
 WeightedClothing.png::CompressedTexture2D::7640089127468341265::1687048281::1687048282::1::::<><>::
 Zeni_Coin.png::CompressedTexture2D::7939009191076406821::1687048281::1687048282::1::::<><>::
-::res://scenes/::1687121001
-Attribute_Block.tscn::PackedScene::7019497545990366919::1687075170::0::1::::<><>::res://scenes/Stat_Block.gd<>uid://bljvmoqil87d4
+::res://scenes/::1687241772
+Attribute_Block.tscn::PackedScene::7019497545990366919::1687241772::0::1::::<><>::res://scenes/Stat_Block.gd<>uid://bljvmoqil87d4
 Character_Creation.tscn::PackedScene::821788049761394645::1687068410::0::1::::<><>::uid://b6v6whag4hcty
-character_sheet.tscn::PackedScene::7615269962275483868::1687121259::0::1::::<><>::uid://duloypsvq45gx<>uid://c23m5xqx0ep7h<>uid://ccw5vqnhtyrxo<>uid://ccyh3cg2ip4r7<>uid://cb20oto4xjev4<>uid://dwjlc6fip5hgq<>uid://cjrwc0r7yv0ri<>uid://kr2xgxxj2u7m<>uid://dhcn75kkj7q6x<>uid://3wvsejajbsuk<>uid://bu7yb3jtjwb7c<>uid://bewe10x5rahwg
+character_sheet.tscn::PackedScene::7615269962275483868::1687241772::0::1::::<><>::uid://duloypsvq45gx<>uid://c23m5xqx0ep7h<>uid://45xasnwfp5g3<>uid://ccyh3cg2ip4r7<>uid://do4ayxjc124yf<>uid://bsg3xnjoou3hq<>uid://c7akdmp6mydil<>uid://cb20oto4xjev4<>uid://d32slw12rx65q<>uid://c83ewu4rr7a3j<>uid://cjrwc0r7yv0ri<>uid://b4204ynta4yno<>uid://kr2xgxxj2u7m<>uid://dhcn75kkj7q6x<>uid://3wvsejajbsuk<>uid://bu7yb3jtjwb7c<>uid://bewe10x5rahwg
 IntroDisclaimer.cs::CSharpScript::-1::1687072452::0::1::::<><>::
 IntroDisclaimer.tscn::PackedScene::638776730600177044::1687068410::0::1::::<><>::res://Images/GameDisclaimer2.ogv<>res://scenes/IntroDisclaimer.cs
 IntroLogo.cs::CSharpScript::-1::1687071601::0::1::::<><>::
 IntroLogo.tscn::PackedScene::6135985561466025666::1687068410::0::1::::<><>::res://Images/IntroLogo2.ogv<>res://scenes/IntroLogo.cs
 New_Game.tscn::PackedScene::2607659323215684173::1687021722::0::1::::<><>::
 New_Scene.tscn::PackedScene::7166738159966288020::1687071601::0::1::::<><>::uid://dcvnuat3do8qk
-SciFi_Attribute.tscn::PackedScene::3178374610296239675::1687075170::0::1::::<><>::res://scenes/SciFi_Attribute_Script.gd<>uid://raxg11vs6hti<>uid://clxonhsa2t23u<>uid://dnb78smi0tk6w<>uid://bjlxrrkx3kvpg<>uid://cq044u5yebekr<>uid://dwjlc6fip5hgq
-SciFi_Attribute_Script.gd::GDScript::-1::1687121261::0::1::::<>MarginContainer<>::
+SciFi_Attribute.tscn::PackedScene::3178374610296239675::1687241772::0::1::::<><>::res://scenes/SciFi_Attribute_Script.gd<>uid://clxonhsa2t23u<>uid://catic88ypg7ee<>uid://dnb78smi0tk6w<>uid://bjlxrrkx3kvpg<>uid://cq044u5yebekr<>uid://dwjlc6fip5hgq
+SciFi_Attribute_Script.gd::GDScript::-1::1687145468::0::1::::<>MarginContainer<>::
 Stat_Assigner.gd::GDScript::-1::1687055959::0::1::::<>HBoxContainer<>::
 Stat_Assigner.tres.gd::GDScript::-1::1686894684::0::1::::<>HBoxContainer<>::
 Stat_Assigner.tscn::PackedScene::8468391649521835279::1687056999::0::1::::<><>::res://scenes/Stat_Assigner.gd<>uid://cdix67ugg1acg<>uid://cbrjv7bd0ha4n<>uid://cvvihq0otuwkm

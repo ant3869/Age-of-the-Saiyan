@@ -1,5 +1,13 @@
-Timer
+MarginContainer
+HBoxContainer
+Label
+Control
+VBoxContainer
+NinePatchRect
 TextureRect
+Popup
+PopupPanel
+Timer
 TextEdit
 CanvasLayer
 Camera2D
@@ -9,11 +17,7 @@ CheckButton
 Button
 ReferenceRect
 Sprite2D
-VBoxContainer
 PanelContainer
-HBoxContainer
-MarginContainer
-Control
 AnimationPlayer
 VideoStreamPlayer
 BoxContainer
