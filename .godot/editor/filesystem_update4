@@ -18,3 +18,4 @@ res://assets/Fonts/labelsettings_20_red.tres
 res://assets/Textures/scifi_label_background_250x31.tres
 res://assets/UI/tool_tip.tscn
 res://assets/UI/tool_tip.gd
+res://scenes/character_sheet.gd

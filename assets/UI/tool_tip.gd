@@ -8,6 +8,11 @@ extends Control
 @onready var titlelabel = $Rect.get_node("Margin2/HBoxContainer/Title")
 @onready var descriptlabel = $Rect.get_node("Margin/Desccription")
 
+func _ready():
+	_update_type_string()
+	_update_title_string()
+	_update_descript_string()
+
 func set_type_text(p_set):
 	type_text = p_set
 	if is_node_ready():

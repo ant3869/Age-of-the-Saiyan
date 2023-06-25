@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://dgq5nbr6ekjh1"]
+[gd_scene load_steps=19 format=3 uid="uid://dgq5nbr6ekjh1"]
 
 [ext_resource type="Texture2D" uid="uid://duloypsvq45gx" path="res://images/GUI/Boxes/Blue_MenuBox.png" id="1_ba5sm"]
+[ext_resource type="Script" path="res://scenes/character_sheet.gd" id="1_ownyn"]
 [ext_resource type="Texture2D" uid="uid://c23m5xqx0ep7h" path="res://images/GUI/Boxes/BlueBox.png" id="2_xhew8"]
 [ext_resource type="LabelSettings" uid="uid://45xasnwfp5g3" path="res://assets/Fonts/labelsettings_35_grey.tres" id="3_sot5y"]
 [ext_resource type="LabelSettings" uid="uid://ccyh3cg2ip4r7" path="res://assets/Fonts/labelsettings_25.tres" id="4_11wls"]
@@ -25,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ownyn")
 
 [node name="SheetBackground" type="NinePatchRect" parent="."]
 layout_mode = 1
