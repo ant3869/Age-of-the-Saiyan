@@ -7,7 +7,7 @@ class_name CharacterStats
 @export var rank: Ranks = Ranks.NOVICE
 
 @export_category("Attributes")
-@export var str = 0
+@export var strength = 0
 @export var dex = 0
 @export var ine = 0
 @export var spd = 0
@@ -27,4 +27,4 @@ enum Ranks {
 }
 
 func get_power_level()->int:
-	return (hp + ki) / (spd+str+dex)
+	return (hp + ki) / (spd+strength+dex)

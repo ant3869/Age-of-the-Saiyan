@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dgq5nbr6ekjh1"]
+[gd_scene load_steps=20 format=3 uid="uid://dgq5nbr6ekjh1"]
 
 [ext_resource type="Texture2D" uid="uid://duloypsvq45gx" path="res://images/GUI/Boxes/Blue_MenuBox.png" id="1_ba5sm"]
 [ext_resource type="Script" path="res://scenes/character_sheet.gd" id="1_ownyn"]
@@ -7,7 +7,8 @@
 [ext_resource type="LabelSettings" uid="uid://ccyh3cg2ip4r7" path="res://assets/Fonts/labelsettings_25.tres" id="4_11wls"]
 [ext_resource type="Texture2D" uid="uid://do4ayxjc124yf" path="res://characters/Images/texture_longhair_saiyan.tres" id="4_nto26"]
 [ext_resource type="LabelSettings" uid="uid://bsg3xnjoou3hq" path="res://assets/Fonts/labelsettings_20_green.tres" id="6_ks3fh"]
-[ext_resource type="PackedScene" uid="uid://c7akdmp6mydil" path="res://scenes/Attribute_Block.tscn" id="7_82yny"]
+[ext_resource type="Script" path="res://scenes/Stat_Block.gd" id="8_crxcy"]
+[ext_resource type="PackedScene" uid="uid://bljvmoqil87d4" path="res://scenes/SciFi_Attribute.tscn" id="9_kmdrc"]
 [ext_resource type="LabelSettings" uid="uid://cb20oto4xjev4" path="res://assets/Fonts/new_label_settings_35.tres" id="10_1hyv1"]
 [ext_resource type="LabelSettings" uid="uid://d32slw12rx65q" path="res://assets/Fonts/labelsettings_20_white.tres" id="12_dil14"]
 [ext_resource type="LabelSettings" uid="uid://c83ewu4rr7a3j" path="res://assets/Fonts/labelsettings_20_red.tres" id="13_gve60"]
@@ -141,25 +142,130 @@ text = "5"
 label_settings = ExtResource("6_ks3fh")
 horizontal_alignment = 2
 
-[node name="AttributeBlock" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats" instance=ExtResource("7_82yny")]
-custom_minimum_size = Vector2(0, 50)
+[node name="AttributeBlock" type="Control" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+custom_minimum_size = Vector2(0, 190)
 layout_mode = 2
 size_flags_vertical = 2
+script = ExtResource("8_crxcy")
+
+[node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock"]
+layout_mode = 0
+offset_right = 260.0
+offset_bottom = 161.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Container" type="VBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin"]
+layout_mode = 2
+theme_override_constants/separation = -1
+
+[node name="INT" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Intellegence"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/INT/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/INT/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/INT/StatBackground/Stats" index="0"]
+text = "Intellegence"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/INT/StatBackground/Stats" index="1"]
+text = "15"
+
+[node name="STR" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Strength"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STR/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STR/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STR/StatBackground/Stats" index="0"]
+text = "Strength"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STR/StatBackground/Stats" index="1"]
+text = "15"
+
+[node name="DEX" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Dexterity"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/DEX/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/DEX/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/DEX/StatBackground/Stats" index="0"]
+text = "Dexterity"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/DEX/StatBackground/Stats" index="1"]
+text = "15"
+
+[node name="STM" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Stamina"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STM/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STM/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STM/StatBackground/Stats" index="0"]
+text = "Stamina"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STM/StatBackground/Stats" index="1"]
+text = "15"
+
+[node name="SPD" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Speed"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/SPD/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/SPD/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/SPD/StatBackground/Stats" index="0"]
+text = "Speed"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/SPD/StatBackground/Stats" index="1"]
+text = "15"
+
+[node name="CHA" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container" instance=ExtResource("9_kmdrc")]
+layout_mode = 2
+stat_name = "Charisma"
+stat_value = 15
+
+[node name="MinButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/CHA/StatBackground" index="0" groups=["MinusButtons"]]
+
+[node name="PlusButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/CHA/StatBackground" index="1" groups=["PlusButtons"]]
+
+[node name="Name" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/CHA/StatBackground/Stats" index="0"]
+text = "Charisma"
+
+[node name="Value" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/CHA/StatBackground/Stats" index="1"]
+text = "15"
 
 [node name="ConfirmContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/separation = 130
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_constants/separation = 121
 
 [node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_direction = 1
 layout_mode = 2
 size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_constants/margin_left = 185
-theme_override_constants/margin_top = 146
+size_flags_vertical = 4
+theme_override_constants/margin_left = 172
+theme_override_constants/margin_top = 5
 
 [node name="ConfirmButton" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer/Margin"]
 custom_minimum_size = Vector2(75, 40)
@@ -175,17 +281,9 @@ stretch_mode = 0
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/ConfirmContainer/Margin/ConfirmButton"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -39.0
-offset_top = -14.5
-offset_right = 43.0
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
+offset_top = 7.0
+offset_right = 82.0
+offset_bottom = 36.0
 text = "Confirm"
 label_settings = ExtResource("12_dil14")
 horizontal_alignment = 1
@@ -495,3 +593,10 @@ anchor_right = 2.975
 anchor_bottom = 3.1
 texture = ExtResource("17_naiyv")
 expand_mode = 1
+
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/INT"]
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STR"]
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/DEX"]
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/STM"]
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/SPD"]
+[editable path="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats/AttributeBlock/Margin/Container/CHA"]
