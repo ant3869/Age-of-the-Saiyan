@@ -21,18 +21,18 @@ load_path = "res://.godot/imported/BlueHover_Plus.png-54ee4d016916e2deb0c0b7edcd
 load_path = "res://.godot/imported/BlueDisabled_Plus.png-ff8fefa7c976b9384ce5b523d00802c0.ctex"
 
 [node name="Attribute" type="MarginContainer"]
-custom_minimum_size = Vector2(250, 31)
+custom_minimum_size = Vector2(240, 31)
 anchors_preset = -1
-anchor_right = 0.217
-anchor_bottom = 0.077
-offset_right = 0.0159912
-offset_bottom = -19.006
+anchor_right = 0.208
+anchor_bottom = 0.048
+offset_right = 0.384003
+offset_bottom = 1.896
 script = ExtResource("1_8e5xd")
 stat_name = "STA"
 stat_value = 5
 
 [node name="StatBackground" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(250, 0)
+custom_minimum_size = Vector2(240, 32)
 layout_mode = 2
 texture = ExtResource("2_mp0lq")
 expand_mode = 1
@@ -46,9 +46,9 @@ anchor_top = 0.087
 anchor_right = 0.13
 anchor_bottom = 0.894
 offset_left = 0.0499997
-offset_top = 0.0149996
+offset_top = 1.015
 offset_right = -0.100002
-offset_bottom = -0.00200081
+offset_bottom = 0.997999
 grow_vertical = 2
 disabled = true
 keep_pressed_outside = true
@@ -66,14 +66,14 @@ wait_time = 0.5
 custom_minimum_size = Vector2(25, 25)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.878
-anchor_top = 0.093
-anchor_right = 0.987
-anchor_bottom = 0.899
-offset_left = 0.100006
-offset_top = -0.00849891
-offset_right = -0.0500031
-offset_bottom = 0.00549889
+anchor_left = 0.87
+anchor_top = 0.123
+anchor_right = 0.978
+anchor_bottom = 0.929
+offset_left = 0.199982
+offset_top = -0.059
+offset_right = 0.279984
+offset_bottom = -0.657001
 grow_horizontal = 0
 grow_vertical = 2
 disabled = true
@@ -112,7 +112,6 @@ label_settings = ExtResource("10_inped")
 layout_mode = 2
 text = "5"
 label_settings = ExtResource("10_inped")
-vertical_alignment = 1
 
 [connection signal="timeout" from="StatBackground/MinButton/minTimer" to="." method="_on_minheld_timer_timeout"]
 [connection signal="timeout" from="StatBackground/PlusButton/plusTimer" to="." method="_on_plusheld_timer_timeout"]

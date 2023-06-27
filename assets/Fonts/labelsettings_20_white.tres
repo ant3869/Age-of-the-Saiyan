@@ -1,7 +1,11 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://d32slw12rx65q"]
 
-[ext_resource type="FontFile" uid="uid://ck0yx6mapbaiq" path="res://assets/Fonts/new_font_file.tres" id="1_afp0l"]
+[ext_resource type="FontFile" uid="uid://b8qbba61ijq5v" path="res://assets/UI/Fonts/Aero.ttf" id="1_j2j3j"]
 
 [resource]
-font = ExtResource("1_afp0l")
-font_size = 20
+font = ExtResource("1_j2j3j")
+font_size = 13
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0.878431)

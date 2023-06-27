@@ -1,57 +1,133 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7akdmp6mydil"]
+[gd_scene load_steps=9 format=3 uid="uid://c7akdmp6mydil"]
 
 [ext_resource type="Script" path="res://scenes/Stat_Block.gd" id="1_1xglq"]
 [ext_resource type="PackedScene" uid="uid://bljvmoqil87d4" path="res://scenes/SciFi_Attribute.tscn" id="1_j53gr"]
+[ext_resource type="LabelSettings" uid="uid://d32slw12rx65q" path="res://assets/Fonts/labelsettings_20_white.tres" id="2_72a0p"]
+[ext_resource type="LabelSettings" uid="uid://bsg3xnjoou3hq" path="res://assets/Fonts/labelsettings_20_green.tres" id="3_2f0ua"]
+[ext_resource type="Texture2D" uid="uid://cjrwc0r7yv0ri" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Normal.png" id="5_nbtg3"]
+[ext_resource type="Texture2D" uid="uid://kr2xgxxj2u7m" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Pressed.png" id="6_w8ryj"]
+[ext_resource type="Texture2D" uid="uid://dhcn75kkj7q6x" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Hover.png" id="7_ie0wg"]
+[ext_resource type="Texture2D" uid="uid://3wvsejajbsuk" path="res://images/GUI/Buttons/SciFi Button/SciFiButton_Disabled.png" id="8_edoy3"]
 
 [node name="AttributeBlock" type="Control"]
-custom_minimum_size = Vector2(260, 161)
+custom_minimum_size = Vector2(240, 161)
 layout_mode = 3
-anchor_right = 0.225
-anchor_bottom = 0.243
-offset_right = -259.2
-offset_bottom = -127.464
+anchor_right = 0.22
+anchor_bottom = 0.434
+offset_right = -0.440018
+offset_bottom = -0.231995
 size_flags_vertical = 3
 script = ExtResource("1_1xglq")
 
 [node name="Margin" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(240, 0)
 layout_mode = 0
-offset_right = 260.0
-offset_bottom = 161.0
-theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
+offset_right = 257.0
+offset_bottom = 270.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 9
+theme_override_constants/margin_bottom = 0
 
 [node name="Container" type="VBoxContainer" parent="Margin"]
 layout_mode = 2
-theme_override_constants/separation = -1
+theme_override_constants/separation = 0
 
-[node name="INT" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+[node name="PointsContainer" type="MarginContainer" parent="Margin/Container"]
+layout_mode = 2
+theme_override_constants/margin_left = -2
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 39
+theme_override_constants/margin_bottom = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/Container/PointsContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="PointsLabelMargin" type="MarginContainer" parent="Margin/Container/PointsContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 70
+theme_override_constants/margin_top = 4
+
+[node name="PointsLabel" type="Label" parent="Margin/Container/PointsContainer/HBoxContainer/PointsLabelMargin"]
+layout_mode = 2
+text = "Available Points:"
+label_settings = ExtResource("2_72a0p")
+horizontal_alignment = 3
+vertical_alignment = 2
+
+[node name="AvailablePoints" type="Label" parent="Margin/Container/PointsContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "5"
+label_settings = ExtResource("3_2f0ua")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Intellegence" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 layout_mode = 2
 stat_name = "Intellegence"
-stat_value = 15
+stat_value = 6
 
-[node name="STR" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+[node name="Strength" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 layout_mode = 2
 stat_name = "Strength"
-stat_value = 15
+stat_value = 12
 
-[node name="DEX" parent="Margin/Container" instance=ExtResource("1_j53gr")]
-layout_mode = 2
-stat_name = "Dexterity"
-stat_value = 15
-
-[node name="STM" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+[node name="Stamina" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 layout_mode = 2
 stat_name = "Stamina"
-stat_value = 15
+stat_value = 12
 
-[node name="SPD" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+[node name="Dexterity" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+layout_mode = 2
+stat_name = "Dexterity"
+stat_value = 10
+
+[node name="Speed" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 layout_mode = 2
 stat_name = "Speed"
-stat_value = 15
+stat_value = 10
 
-[node name="CHA" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+[node name="Wisdom" parent="Margin/Container" instance=ExtResource("1_j53gr")]
+layout_mode = 2
+stat_name = "Wisdom"
+stat_value = 8
+
+[node name="Charisma" parent="Margin/Container" instance=ExtResource("1_j53gr")]
 layout_mode = 2
 stat_name = "Charisma"
-stat_value = 15
+
+[node name="ConfirmButtonMargin" type="MarginContainer" parent="Margin/Container"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/margin_top = 3
+
+[node name="ConfirmButton" type="TextureButton" parent="Margin/Container/ConfirmButtonMargin"]
+custom_minimum_size = Vector2(65, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+texture_normal = ExtResource("5_nbtg3")
+texture_pressed = ExtResource("6_w8ryj")
+texture_hover = ExtResource("7_ie0wg")
+texture_disabled = ExtResource("8_edoy3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/Container/ConfirmButtonMargin/ConfirmButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.107
+anchor_top = 0.275
+anchor_right = 0.933
+anchor_bottom = 0.7
+offset_left = -0.0250006
+offset_top = 1.0
+offset_right = 0.0250015
+offset_bottom = 0.999998
+text = "Confirm"
+label_settings = ExtResource("2_72a0p")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -23,14 +23,14 @@ func _ready():
 			button.set_disabled(false)
 			button.visible = true
 	for button in get_tree().get_nodes_in_group("PlusButtons"):
-		button.connect("pressed", IncreaseStat([button.get_node("../..").get_name()]))
+		button.connect("pressed", IncreaseStat())
 	for button in get_tree().get_nodes_in_group("MinusButtons"):
-		button.connect("pressed", DecreaseStat([button.get_node("../..").get_name()]))
+		button.connect("pressed", DecreaseStat())
 
-func IncreaseStat(stat):
-	set(stat + "_add", get(stat + "_add") + 1)
-	get_node(stats_path + stat + "/StatBackgroun/MinButton").set_disabled(false)
-	get_node(stats_path + stat + "/StatBackgroun/Stats/Value").font.set_modulate(Color(0, 1, 0))
+func IncreaseStat():
+#	set(stat + "_add", get(stat + "_add") + 1)
+#	get_node(stats_path + stat + "/StatBackgroun/MinButton").set_disabled(false)
+#	get_node(stats_path + stat + "/StatBackgroun/Stats/Value").font.set_modulate(Color(0, 1, 0))
 	availablepoints -= 1
 	pointsvalue.set_text(str(availablepoints))
 	if availablepoints == 0:
@@ -38,7 +38,7 @@ func IncreaseStat(stat):
 			button.set_disabled(true)
 			button.visible = false
 
-func DecreaseStat(stat):
+func DecreaseStat():
 	pass
 
 func EnablePlusButtons():

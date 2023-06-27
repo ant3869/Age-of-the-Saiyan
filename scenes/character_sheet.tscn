@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dgq5nbr6ekjh1"]
+[gd_scene load_steps=21 format=3 uid="uid://dgq5nbr6ekjh1"]
 
 [ext_resource type="Texture2D" uid="uid://duloypsvq45gx" path="res://images/GUI/Boxes/Blue_MenuBox.png" id="1_ba5sm"]
 [ext_resource type="Script" path="res://scenes/character_sheet.gd" id="1_ownyn"]
@@ -7,6 +7,7 @@
 [ext_resource type="LabelSettings" uid="uid://ccyh3cg2ip4r7" path="res://assets/Fonts/labelsettings_25.tres" id="4_11wls"]
 [ext_resource type="Texture2D" uid="uid://do4ayxjc124yf" path="res://characters/Images/texture_longhair_saiyan.tres" id="4_nto26"]
 [ext_resource type="LabelSettings" uid="uid://bsg3xnjoou3hq" path="res://assets/Fonts/labelsettings_20_green.tres" id="6_ks3fh"]
+[ext_resource type="PackedScene" uid="uid://c7akdmp6mydil" path="res://scenes/Attribute_Block.tscn" id="7_82yny"]
 [ext_resource type="Script" path="res://scenes/Stat_Block.gd" id="8_crxcy"]
 [ext_resource type="PackedScene" uid="uid://bljvmoqil87d4" path="res://scenes/SciFi_Attribute.tscn" id="9_kmdrc"]
 [ext_resource type="LabelSettings" uid="uid://cb20oto4xjev4" path="res://assets/Fonts/new_label_settings_35.tres" id="10_1hyv1"]
@@ -121,6 +122,7 @@ theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = 0
 
 [node name="PointsContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+visible = false
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -143,6 +145,7 @@ label_settings = ExtResource("6_ks3fh")
 horizontal_alignment = 2
 
 [node name="AttributeBlock" type="Control" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+visible = false
 custom_minimum_size = Vector2(0, 190)
 layout_mode = 2
 size_flags_vertical = 2
@@ -252,6 +255,7 @@ text = "Charisma"
 text = "15"
 
 [node name="ConfirmContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats"]
+visible = false
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -289,6 +293,9 @@ label_settings = ExtResource("12_dil14")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="AttributeBlock2" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/MainStats" instance=ExtResource("7_82yny")]
+layout_mode = 2
+
 [node name="DerivedStats" type="ScrollContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer"]
 clip_contents = false
 layout_mode = 2
@@ -298,6 +305,7 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = -1
 
 [node name="Margin" type="MarginContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
