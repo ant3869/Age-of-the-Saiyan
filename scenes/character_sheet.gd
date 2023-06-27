@@ -23,9 +23,9 @@ func _ready():
 			button.set_disabled(false)
 			button.visible = true
 	for button in get_tree().get_nodes_in_group("PlusButtons"):
-		button.connect("pressed", IncreaseStat())
+		button.connect("pressed", IncreaseStat)
 	for button in get_tree().get_nodes_in_group("MinusButtons"):
-		button.connect("pressed", DecreaseStat())
+		button.connect("pressed", DecreaseStat)
 
 func IncreaseStat():
 #	set(stat + "_add", get(stat + "_add") + 1)

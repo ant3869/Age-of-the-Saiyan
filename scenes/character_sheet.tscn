@@ -312,7 +312,7 @@ custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
 [node name="Level" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -329,7 +329,7 @@ text = "1"
 label_settings = ExtResource("6_ks3fh")
 
 [node name="Hitpoints" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -346,7 +346,7 @@ text = "300"
 label_settings = ExtResource("12_dil14")
 
 [node name="Ki" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -363,7 +363,7 @@ text = "150"
 label_settings = ExtResource("12_dil14")
 
 [node name="Stamina" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -380,7 +380,7 @@ text = "50"
 label_settings = ExtResource("13_gve60")
 
 [node name="APR" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -398,7 +398,7 @@ text = "5
 label_settings = ExtResource("4_11wls")
 
 [node name="Attack" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -415,7 +415,7 @@ text = "50"
 label_settings = ExtResource("4_11wls")
 
 [node name="Defense" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -432,7 +432,7 @@ text = "50"
 label_settings = ExtResource("4_11wls")
 
 [node name="Experience" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/HBoxContainer/DerivedStats/VBoxContainer"]
-custom_minimum_size = Vector2(340, 20)
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 
@@ -456,7 +456,7 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
 [node name="Stats" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
-custom_minimum_size = Vector2(150, 30)
+custom_minimum_size = Vector2(125, 30)
 layout_mode = 2
 texture_normal = ExtResource("16_qdtbi")
 texture_pressed = ExtResource("17_v6n4k")
@@ -484,7 +484,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Skills" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
-custom_minimum_size = Vector2(150, 30)
+custom_minimum_size = Vector2(125, 30)
 layout_mode = 2
 texture_normal = ExtResource("16_qdtbi")
 texture_pressed = ExtResource("17_v6n4k")
@@ -512,7 +512,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Abilities" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
-custom_minimum_size = Vector2(150, 30)
+custom_minimum_size = Vector2(125, 30)
 layout_mode = 2
 texture_normal = ExtResource("16_qdtbi")
 texture_pressed = ExtResource("17_v6n4k")
@@ -535,6 +535,34 @@ offset_bottom = 16.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Abilities"
+label_settings = ExtResource("10_1hyv1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Training" type="TextureButton" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons"]
+custom_minimum_size = Vector2(125, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_qdtbi")
+texture_pressed = ExtResource("17_v6n4k")
+texture_hover = ExtResource("18_hragr")
+texture_disabled = ExtResource("19_12qkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/DisplayButtons/Training"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -16.5
+offset_right = 67.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Training"
 label_settings = ExtResource("10_1hyv1")
 horizontal_alignment = 1
 vertical_alignment = 1

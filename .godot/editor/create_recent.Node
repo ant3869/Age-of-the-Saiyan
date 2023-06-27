@@ -1,9 +1,9 @@
-Label
 MarginContainer
+NinePatchRect
+Label
 HBoxContainer
 Control
 VBoxContainer
-NinePatchRect
 TextureRect
 Popup
 PopupPanel

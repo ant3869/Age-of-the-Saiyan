@@ -20,3 +20,4 @@ res://assets/UI/tool_tip.tscn
 res://assets/UI/tool_tip.gd
 res://scenes/character_sheet.gd
 res://stats/character_stats.gd
+res://scenes/Stat_Block.gd
