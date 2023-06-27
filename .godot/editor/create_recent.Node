@@ -1,10 +1,11 @@
+TextureRect
 MarginContainer
+ProgressBar
+VBoxContainer
 NinePatchRect
 Label
 HBoxContainer
 Control
-VBoxContainer
-TextureRect
 Popup
 PopupPanel
 Timer
