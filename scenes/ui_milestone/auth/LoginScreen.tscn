@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/auth/login_screen.gd" id="1_login"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/FramedPanel.tscn" id="2_frame"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/auth/components/LabeledField.tscn" id="3_field"]
+
+[node name="LoginScreen" type="VBoxContainer"]
+custom_minimum_size = Vector2(420, 0)
+script = ExtResource("1_login")
+
+[node name="LoginFrame" parent="." instance=ExtResource("2_frame")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FormRow" type="HBoxContainer" parent="LoginFrame/Margin/VBox/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="LogoArea" type="Panel" parent="LoginFrame/Margin/VBox/Content/FormRow"]
+custom_minimum_size = Vector2(130, 160)
+layout_mode = 2
+
+[node name="LogoLabel" type="Label" parent="LoginFrame/Margin/VBox/Content/FormRow/LogoArea"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "✦"
+
+[node name="FormFields" type="VBoxContainer" parent="LoginFrame/Margin/VBox/Content/FormRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_constants/separation = 10
+
+[node name="CommanderIDField" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields" instance=ExtResource("3_field")]
+layout_mode = 2
+
+[node name="PasswordField" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields" instance=ExtResource("3_field")]
+layout_mode = 2
+
+[node name="RememberRow" type="HBoxContainer" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RememberMe" type="CheckBox" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields/RememberRow"]
+layout_mode = 2
+text = "Remember Me"
+
+[node name="ErrorLabel" type="Label" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.302, 0.302, 1)
+theme_override_font_sizes/font_size = 13
+text = ""
+
+[node name="LoginButton" type="Button" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LOGIN"
+
+[node name="LinksRow" type="HBoxContainer" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="ForgotLink" type="Button" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields/LinksRow"]
+layout_mode = 2
+text = "Forgot Password?"
+
+[node name="LinkSpacer" type="Control" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields/LinksRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CreateLink" type="Button" parent="LoginFrame/Margin/VBox/Content/FormRow/FormFields/LinksRow"]
+layout_mode = 2
+text = "Create New Account"
