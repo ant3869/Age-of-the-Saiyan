@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/auth/components/labeled_field.gd" id="1_lbfld"]
+
+[node name="LabeledField" type="VBoxContainer"]
+custom_minimum_size = Vector2(0, 54)
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+script = ExtResource("1_lbfld")
+
+[node name="FieldLabel" type="Label" parent="."]
+layout_mode = 2
+
+[node name="Input" type="LineEdit" parent="."]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 32)
+size_flags_horizontal = 3

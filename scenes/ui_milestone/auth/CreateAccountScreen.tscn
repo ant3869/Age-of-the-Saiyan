@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/auth/create_account_screen.gd" id="1_cract"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/FramedPanel.tscn" id="2_frame"]
+
+[node name="CreateAccountScreen" type="VBoxContainer"]
+custom_minimum_size = Vector2(520, 0)
+script = ExtResource("1_cract")
+
+[node name="CreateFrame" parent="." instance=ExtResource("2_frame")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Fields" type="VBoxContainer" parent="CreateFrame/Margin/VBox/Content"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="CommanderIDRow" type="HBoxContainer" parent="CreateFrame/Margin/VBox/Content/Fields"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RowLabel" type="Label" parent="CreateFrame/Margin/VBox/Content/Fields/CommanderIDRow"]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+vertical_alignment = 1
+text = "COMMANDER ID"
+
+[node name="Input" type="LineEdit" parent="CreateFrame/Margin/VBox/Content/Fields/CommanderIDRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 32)
+placeholder_text = "Enter Commander ID"
+
+[node name="PasswordRow" type="HBoxContainer" parent="CreateFrame/Margin/VBox/Content/Fields"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RowLabel" type="Label" parent="CreateFrame/Margin/VBox/Content/Fields/PasswordRow"]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+vertical_alignment = 1
+text = "PASSWORD"
+
+[node name="Input" type="LineEdit" parent="CreateFrame/Margin/VBox/Content/Fields/PasswordRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 32)
+placeholder_text = "Create Password"
+secret = true
+
+[node name="ConfirmRow" type="HBoxContainer" parent="CreateFrame/Margin/VBox/Content/Fields"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RowLabel" type="Label" parent="CreateFrame/Margin/VBox/Content/Fields/ConfirmRow"]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+vertical_alignment = 1
+text = "CONFIRM PASSWORD"
+
+[node name="Input" type="LineEdit" parent="CreateFrame/Margin/VBox/Content/Fields/ConfirmRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 32)
+placeholder_text = "Confirm Password"
+secret = true
+
+[node name="EmailRow" type="HBoxContainer" parent="CreateFrame/Margin/VBox/Content/Fields"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RowLabel" type="Label" parent="CreateFrame/Margin/VBox/Content/Fields/EmailRow"]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+vertical_alignment = 1
+text = "EMAIL"
+
+[node name="Input" type="LineEdit" parent="CreateFrame/Margin/VBox/Content/Fields/EmailRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 32)
+placeholder_text = "Enter Email Address"
+
+[node name="ErrorLabel" type="Label" parent="CreateFrame/Margin/VBox/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.302, 0.302, 1)
+theme_override_font_sizes/font_size = 13
+text = ""
+
+[node name="FooterRow" type="HBoxContainer" parent="CreateFrame/Margin/VBox/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="BackButton" type="Button" parent="CreateFrame/Margin/VBox/Content/FooterRow"]
+custom_minimum_size = Vector2(110, 44)
+layout_mode = 2
+text = "BACK"
+
+[node name="FooterSpacer" type="Control" parent="CreateFrame/Margin/VBox/Content/FooterRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CreateButton" type="Button" parent="CreateFrame/Margin/VBox/Content/FooterRow"]
+custom_minimum_size = Vector2(180, 44)
+layout_mode = 2
+text = "CREATE ACCOUNT"

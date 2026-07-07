@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/auth/main_auth.gd" id="1_mauth"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/auth/LoginScreen.tscn" id="2_lscn"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/auth/CreateAccountScreen.tscn" id="3_cscn"]
+
+[node name="MainAuth" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mauth")
+
+[node name="Backdrop" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoginWrapper" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoginScreen" parent="LoginWrapper" instance=ExtResource("2_lscn")]
+layout_mode = 2
+
+[node name="CreateWrapper" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+visible = false
+
+[node name="CreateAccountScreen" parent="CreateWrapper" instance=ExtResource("3_cscn")]
+layout_mode = 2
