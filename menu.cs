@@ -27,7 +27,7 @@ public partial class menu : Control
 
 	private void _on_start_pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/Test.tscn");
+		GetTree().ChangeSceneToFile("res://scenes/ui_milestone/auth/MainAuth.tscn");
 	}
 
 	private void _on_options_pressed()
