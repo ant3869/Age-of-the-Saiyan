@@ -1,0 +1,172 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/squadron_screen.gd" id="1_qjwy5"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/FramedPanel.tscn" id="2_pw88r"]
+
+[node name="SquadronScreen" type="VBoxContainer"]
+custom_minimum_size = Vector2(0, 500)
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+script = ExtResource("1_qjwy5")
+
+[node name="SquadronFrame" parent="." instance=ExtResource("2_pw88r")]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="SquadronFrame/Margin/VBox/Content"]
+layout_mode = 2
+
+[node name="PowerLevel" type="Label" parent="SquadronFrame/Margin/VBox/Content/Header"]
+layout_mode = 2
+size_flags_horizontal = 8
+horizontal_alignment = 2
+theme_override_colors/font_color = Color(0.380, 1, 0.451, 1)
+theme_override_font_sizes/font_size = 24
+text = "POWER LEVEL: 0"
+
+[node name="MainContent" type="HBoxContainer" parent="SquadronFrame/Margin/VBox/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="RosterPanel" type="VBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="TableHeader" type="HBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Warrior" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "WARRIOR"
+
+[node name="Level" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "LVL"
+
+[node name="HP" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "HP"
+
+[node name="KI" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "KI"
+
+[node name="Role" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "ROLE"
+
+[node name="Status" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/TableHeader"]
+custom_minimum_size = Vector2(88, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "STATUS"
+
+[node name="RowsHolder" type="ScrollContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Rows" type="VBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent/RosterPanel/RowsHolder"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="SidePanel" type="VBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Actions" type="VBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Recruit" type="Button" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Actions"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "RECRUIT WARRIOR"
+
+[node name="Training" type="Button" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Actions"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "TRAINING ROOM"
+
+[node name="Formations" type="Button" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Actions"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "SQUAD FORMATIONS"
+
+[node name="Bonuses" type="VBoxContainer" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BonusHeader" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Bonuses"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "SQUAD BONUSES"
+
+[node name="Attack" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Bonuses"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.761, 0.929, 1, 1)
+text = "ATTACK"
+
+[node name="Defense" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Bonuses"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.761, 0.929, 1, 1)
+text = "DEFENSE"
+
+[node name="Experience" type="Label" parent="SquadronFrame/Margin/VBox/Content/MainContent/SidePanel/Bonuses"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.761, 0.929, 1, 1)
+text = "EXPERIENCE"
+
+[node name="Tabs" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="Stats" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "STATS"
+
+[node name="Skills" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SKILLS"
+
+[node name="Abilities" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "ABILITIES"
+
+[node name="Equipment" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "EQUIPMENT"
+
+[node name="Squadron" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SQUADRON"
+
+[node name="Planets" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "PLANETS"
+
+[node name="Market" type="Button" parent="Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MARKET"

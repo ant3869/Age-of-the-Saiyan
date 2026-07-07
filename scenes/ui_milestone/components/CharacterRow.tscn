@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/components/character_row.gd" id="1_l17yn"]
+
+[node name="CharacterRow" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 52)
+size_flags_horizontal = 3
+script = ExtResource("1_l17yn")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 6
+
+[node name="Columns" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Portrait" type="TextureRect" parent="Margin/Columns"]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(132, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.945, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "RADDOCK"
+
+[node name="Level" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.945, 1, 1)
+text = "1"
+
+[node name="HP" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.973, 0.471, 1)
+text = "388"
+
+[node name="KI" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.859, 1, 1)
+text = "158"
+
+[node name="Role" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.883, 0.188, 1)
+text = "LEADER"
+
+[node name="Status" type="Label" parent="Margin/Columns"]
+custom_minimum_size = Vector2(88, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "ACTIVE"

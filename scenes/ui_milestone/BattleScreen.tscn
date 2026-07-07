@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/battle_screen.gd" id="1_cckx6"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/FramedPanel.tscn" id="2_hp18e"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/StatCard.tscn" id="3_4kq2v"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/components/ActionMenu.tscn" id="4_1sim8"]
+
+[node name="BattleScreen" type="VBoxContainer"]
+custom_minimum_size = Vector2(0, 500)
+size_flags_vertical = 3
+script = ExtResource("1_cckx6")
+
+[node name="BattleFrame" parent="." instance=ExtResource("2_hp18e")]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="BattleFrame/Margin/VBox/Content"]
+layout_mode = 2
+
+[node name="BattleTitle" type="Label" parent="BattleFrame/Margin/VBox/Content/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.745, 0.973, 0.157, 1)
+theme_override_font_sizes/font_size = 26
+text = "BATTLE"
+
+[node name="MainRow" type="HBoxContainer" parent="BattleFrame/Margin/VBox/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="PlayerCard" parent="BattleFrame/Margin/VBox/Content/MainRow" instance=ExtResource("3_4kq2v")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CombatLog" type="PanelContainer" parent="BattleFrame/Margin/VBox/Content/MainRow"]
+custom_minimum_size = Vector2(340, 270)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Margin" type="MarginContainer" parent="BattleFrame/Margin/VBox/Content/MainRow/CombatLog"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Log" type="RichTextLabel" parent="BattleFrame/Margin/VBox/Content/MainRow/CombatLog/Margin"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
+
+[node name="EnemyCard" parent="BattleFrame/Margin/VBox/Content/MainRow" instance=ExtResource("3_4kq2v")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Footer" type="HBoxContainer" parent="BattleFrame/Margin/VBox/Content"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PlayerMenu" parent="BattleFrame/Margin/VBox/Content/Footer" instance=ExtResource("4_1sim8")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EnemyMenu" parent="BattleFrame/Margin/VBox/Content/Footer" instance=ExtResource("4_1sim8")]
+layout_mode = 2
+size_flags_horizontal = 3
