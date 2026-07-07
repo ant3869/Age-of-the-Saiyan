@@ -25,7 +25,9 @@ func _show_create_account() -> void:
 
 func _on_login_requested(commander_id: String, password: String) -> void:
 	# TODO: Connect to authentication backend
+	# For now, any non-empty credentials are accepted and the player proceeds to the game.
 	print("[Auth] Login attempt for: %s" % commander_id)
+	get_tree().change_scene_to_file("res://scenes/ui_milestone/MainSquadBattle.tscn")
 
 func _on_forgot_password() -> void:
 	# TODO: Navigate to password reset flow
