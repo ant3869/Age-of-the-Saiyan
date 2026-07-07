@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_milestone/main_screen.gd" id="1_mw880"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/SquadronScreen.tscn" id="2_r4l5a"]
+[ext_resource type="PackedScene" path="res://scenes/ui_milestone/BattleScreen.tscn" id="3_qyl6u"]
+
+[node name="MainSquadBattle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mw880")
+
+[node name="Backdrop" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="RootLayout" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="SquadronScreen" parent="Margin/RootLayout" instance=ExtResource("2_r4l5a")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BattleScreen" parent="Margin/RootLayout" instance=ExtResource("3_qyl6u")]
+layout_mode = 2
+size_flags_vertical = 3
